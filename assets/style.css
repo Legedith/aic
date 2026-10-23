@@ -241,3 +241,14 @@ body{background:white;color:#152128}a{color:#1a5d53}
 .task-zones{grid-template-columns:1fr;gap:17px}
 .task-zones strong{font-size:23px}
 }
+
+
+.story-photo{margin:36px 0 40px;background:#122127;border:1px solid #344b52;overflow:hidden}
+.story-photo img{display:block;width:100%;height:auto;background:#172329}
+.story-photo figcaption{padding:12px 17px;border-top:1px solid #344b52;font:10px/1.6 "IBM Plex Mono",monospace;letter-spacing:.05em;color:#90aaa9}
+.story-photo figcaption a{color:var(--gold);text-decoration:none}
+.story-photo a:hover,.hero-photograph a:hover{text-decoration:underline}
+@media(max-width:650px){
+.story-photo{margin:28px 0 30px}
+.story-photo figcaption{font-size:9px}
+}
