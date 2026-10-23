@@ -98,24 +98,22 @@
         <section id="qualification" class="chapter">
           <div class="chapter-marker">01 / MARCH TO MAY</div>
           <h2>The easiest version of the problem was <em>already hard.</em></h2>
-          <p>I do not have a formal degree in robotics or controls. I had worked with robotics before, but that was four or five years ago, around the time ROS Noetic was current and ROS 2 still felt rough. In the intervening years my work had shifted toward building AI systems.</p>
+          <p>I had been away from robotics for roughly four or five years. The last time I worked seriously with it, ROS Noetic was new and ROS 2 was still finding its feet. Since then, most of my engineering had been about AI. I had never studied robotics or control theory formally, and suddenly I was trying to solve a task that combined perception, motion planning, contact mechanics, and flexible cables.</p>
           <p>When I saw Intrinsic's <a href="https://www.intrinsic.ai/events/ai-for-industry-challenge" target="_blank" rel="noopener noreferrer">AI for Industry Challenge</a>, I wanted to return. Then I looked at the actual task.</p>
-          <p>A robot had to manipulate a flexible networking cable with two very different ends: an SFP module and an SC plug. Each needed to go into a corresponding port on a taskboard. The difficulty was not just getting to the correct position. The cable bends, contacts can jam, grasp offsets vary, and the final clearance is measured in millimeters. Everything you think you know about the world can change the moment the connector touches it.</p>
+          <p>The full challenge involved a flexible fiber-optic cable, an SFP module on one end and an SC plug on the other, and a taskboard full of small, adjustable fixtures. The robot had to identify the right parts, grasp a connector, lift it out of its holder, move the dangling cable without catching it on the board, and finally insert each end into its assigned port. The last few millimeters mattered most. A slight misalignment could turn forward motion into a jam, and a connector that looked seated might still be unlatched.</p>
 
-          <div class="component-pair" aria-label="Schematic description of both cable connectors">
-            <div class="component-card"><div class="component-num">A / SFP</div>
-              <svg viewBox="0 0 250 95" aria-hidden="true"><path d="M10 48H52" stroke="#7cc7c0" stroke-width="5" stroke-linecap="round"/><rect x="52" y="25" width="126" height="47" rx="4" fill="#344950" stroke="#91b3b8" stroke-width="1.5"/><rect x="178" y="31" width="50" height="35" rx="2" fill="#bc965e" stroke="#e7ca91"/><path d="M80 34h60M80 45h60M80 56h45" stroke="#86a9af" stroke-width="2"/><path d="M230 15v65" stroke="#deac6c" stroke-dasharray="4 4"/></svg>
-              <p>A rectangular metal module. Tight alignment, especially across the narrow axis.</p>
+          <div class="task-geometry-note" aria-label="The actual four zones of the challenge board">
+            <div class="task-geometry-top">THE OFFICIAL TASKBOARD / FOUR FUNCTIONAL ZONES</div>
+            <div class="task-zones">
+              <div><span>01 / INSERT</span><strong>NIC cards</strong><p>Up to five network cards on adjustable mounts, with two SFP ports per card.</p></div>
+              <div><span>02 / INSERT</span><strong>SC port rails</strong><p>Optical ports distributed across two rails, with positions that could vary.</p></div>
+              <div><span>03 + 04 / PICK</span><strong>Cable fixtures</strong><p>Staging areas for the cable ends, separate from the insertion destinations.</p></div>
             </div>
-            <div class="component-card"><div class="component-num">B / SC</div>
-              <svg viewBox="0 0 250 95" aria-hidden="true"><path d="M10 48H62" stroke="#7cc7c0" stroke-width="5" stroke-linecap="round"/><rect x="62" y="18" width="116" height="60" rx="6" fill="#425861" stroke="#9db6be" stroke-width="1.5"/><rect x="178" y="35" width="40" height="26" rx="3" fill="#c6d6d8" stroke="#ecf4f5"/><rect x="215" y="40" width="17" height="15" rx="5" fill="#d7b079"/><path d="M79 28h20M79 68h20" stroke="#aecacf" stroke-width="3"/></svg>
-              <p>A different housing and seating mechanism, including a final mechanical latch.</p>
-            </div>
-            <div class="component-caption">Connector silhouettes, simplified for clarity.</div>
+            <a href="https://github.com/intrinsic-dev/aic/blob/main/docs/task_board_description.md" target="_blank" rel="noopener noreferrer">See Intrinsic's official taskboard description and CAD links ↗</a>
           </div>
 
-          <p>Qualification made the task as kind as it could. The robot started already holding one end of the cable, near the target. The target board and its components were randomized, but the desired port was specified. I only had to make the policy find its way to the right opening and insert the held connector. Even so, it was a serious controls and perception problem. Intrinsic's <a href="https://github.com/intrinsic-dev/aic/blob/main/docs/qualification_phase.md" target="_blank" rel="noopener noreferrer">public qualification specification</a> describes the small grasp deviations and board randomization that made the task nontrivial.</p>
-          <p>The scale was intimidating, too. Intrinsic later reported <strong>5,000 developers from 115 countries</strong> taking part. There were researchers, established robotics engineers, labs, companies, and other independent developers. I was one person, entering without university or company resources.</p>
+          <p>Qualification was the gentle introduction. The robot already held one connector in a known grasp, and the correct destination was specified. But the board and target positions were randomized. I still had to make the policy find the opening, approach it safely, and finish the insertion. Even so, it was a serious controls and perception problem. Intrinsic's <a href="https://github.com/intrinsic-dev/aic/blob/main/docs/qualification_phase.md" target="_blank" rel="noopener noreferrer">public qualification specification</a> describes the small grasp deviations and board randomization that made the task nontrivial.</p>
+          <p>The field only made the gap feel larger. Research labs, engineers with years of controls experience, university teams, companies, and independent developers were all trying to solve the same thing. I did not have a lab to ask for another experiment, another GPU, or another pair of hands.</p>
 
           <div class="phase-timeline" aria-label="Official 2026 challenge phase dates">
             <div class="timeline-track"></div>
@@ -127,7 +125,7 @@
 
           <p>My computer did not help. I was working on an aging laptop with an Intel i7 and a GTX 1660-class GPU. On a good day Gazebo managed a real-time factor of about 0.15 to 0.2. One minute of simulated motion could take five to seven minutes to compute. The official toolkit recommended considerably more powerful hardware. I also had a personal ChatGPT subscription, around twenty dollars a month, rather than an enterprise AI budget.</p>
           <p>Initially I went down the obvious paths. Basic OpenCV features and shape extraction, small object-detection experiments, learning-based approaches. I explored ideas such as YOLO, HIL-SERL and H-DAgger, looking for something I could make work within my constraints. What I kept running into was that my real bottleneck was not finding another robotics paper.</p>
-          <p>It was the rate at which I could run an experiment, understand what happened, and try the next thing.</p>
+          <p>It was the rate at which I could run an experiment, understand what went wrong, and try something better. <strong>I could not buy more compute or a bigger team. I had to change how the engineering itself was done.</strong></p>
         </section>
 
         <section id="harness" class="chapter">
