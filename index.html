@@ -5,11 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#0c1115">
   <meta name="color-scheme" content="dark">
-  <meta name="author" content="Legedith">
-  <meta name="description" content="An independent engineer's first-person account of building an autonomous AI engineering harness, solving a cable-handling robotics challenge, and finishing in the global top ten.">
+  <meta name="author" content="Jatin Dheniwal">
+  <meta name="description" content="Jatin Dheniwal entered a global robotics competition with an old laptop and a $20 AI subscription, then built an engineering team out of autonomous agents.">
   <meta property="og:type" content="article">
-  <meta property="og:title" content="I couldn't afford to iterate faster. So I built a system that could.">
-  <meta property="og:description" content="From a slow laptop and a personal AI subscription to ten successful hardware insertions. The engineering, the failures, and the eighth-place finish.">
+  <meta property="og:title" content="I Entered a Global Robotics Challenge With a $20 AI Subscription. Then I Built the Team I Couldn't Afford.">
+  <meta property="og:description" content="One engineer, no robotics lab, an aging laptop and an AI team built from scratch. A technical story about perception, touch and a top-ten finish.">
   <meta property="og:url" content="https://legedith.github.io/aic/">
   <link rel="canonical" href="https://legedith.github.io/aic/">
   <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
@@ -19,14 +19,14 @@
   <style>body{margin:0;background:#0c1115;color:#e7eeeb;font-family:Georgia,serif}</style>
   <link rel="stylesheet" href="./assets/style.css">
   <script defer src="./assets/main.js"></script>
-  <title>I couldn't afford to iterate faster · Legedith</title>
+  <title>With a $20 AI Subscription, I Built the Team I Couldn't Afford · Jatin Dheniwal</title>
 </head>
 <body>
   <a class="skip" href="#story">Skip to story</a>
   <div class="read-progress" id="read-progress" aria-hidden="true"></div>
 
   <header class="site-header">
-    <a href="#top" class="wordmark" aria-label="Legedith field notes home"><span class="wordmark-mark">L<span class="wordmark-point">.</span></span><span>LEGEDITH <span class="wordmark-muted">/ FIELD NOTES</span></span></a>
+    <a href="#top" class="wordmark" aria-label="Jatin Dheniwal article home"><span class="wordmark-mark">JD<span class="wordmark-point">.</span></span><span>JATIN DHENIWAL <span class="wordmark-muted">/ FIELD NOTES</span></span></a>
     <nav class="site-nav" aria-label="On this page">
       <a href="#qualification">The start</a>
       <a href="#harness">The harness</a>
@@ -41,50 +41,20 @@
     <section class="hero" aria-labelledby="hero-title">
       <div class="hero-content">
         <div class="eyebrow"><span class="live-dot" aria-hidden="true"></span> ENGINEERING FIELD NOTE <span class="eyebrow-divider">/</span> 2026</div>
-        <h1 id="hero-title">I couldn't afford to iterate faster.<br><em>So I built a system that could.</em></h1>
-        <p class="hero-dek">How I returned to robotics with an aging laptop, a personal AI subscription, and no lab behind me, then built an autonomous engineering workflow that helped me reach the final ten of a global robotics challenge.</p>
+        <h1 id="hero-title">I Entered a Global Robotics Challenge With a $20 AI Subscription.<br><em>Then I Built the Team I Couldn't Afford.</em></h1>
+        <p class="hero-dek">I was one engineer up against research labs and industry teams. My robot needed to locate, carry, and feel its way into tiny connector ports. To compete, I first had to build something else: a team of AI agents that could run the engineering process itself.</p>
+        <p class="hero-byline">BY <strong>JATIN DHENIWAL</strong> <span>·</span> A SIX-MONTH ROBOTICS EXPERIMENT</p>
         <div class="hero-actions">
           <a class="button-primary" href="#story">Read the story <span aria-hidden="true">↘</span></a>
-          <span class="reading-time"><span class="small-square" aria-hidden="true"></span> A long-form technical account</span>
+          <span class="reading-time"><span class="small-square" aria-hidden="true"></span> THE WHOLE STORY, FROM GAZEBO TO HARDWARE</span>
         </div>
       </div>
 
-      <div class="hero-visual" role="img" aria-label="Original top-down conceptual schematic of a robotic cable-handling taskboard: five NIC-card modules, two SC destination positions, cable fixtures, and a loose cable with SFP and SC ends. Not to scale.">
-        <div class="figure-top"><span>FIG. 01 / TASK GEOMETRY</span><span class="figure-live"><span></span> CONCEPTUAL</span></div>
-        <svg class="board-svg" viewBox="0 0 690 560" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <defs>
-            <pattern id="hero-grid" width="22" height="22" patternUnits="userSpaceOnUse"><path d="M22 0H0V22" fill="none" stroke="#26343c" stroke-width=".75"/></pattern>
-            <linearGradient id="board-surface" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#1d2a2f"/><stop offset="1" stop-color="#131d23"/></linearGradient>
-            <linearGradient id="plug-grad" x1="0" x2="1"><stop stop-color="#c6dae0"/><stop offset="1" stop-color="#7895a2"/></linearGradient>
-          </defs>
-          <rect width="690" height="560" fill="url(#hero-grid)" opacity=".55"/>
-          <g opacity=".6"><path d="M43 47h55M43 47v55M647 47h-55M647 47v55M43 512h55M43 512v-55M647 512h-55M647 512v-55" stroke="#8c9fa4" stroke-width="1.4" fill="none"/></g>
-          <rect x="80" y="94" width="530" height="374" rx="9" fill="url(#board-surface)" stroke="#526975" stroke-width="1.5"/>
-          <path d="M96 112h498M96 448h498" stroke="#627983" stroke-width="2.2" opacity=".65"/>
-          <g stroke="#31434b" stroke-width="1" stroke-dasharray="3 5"><path d="M160 110v333M253 110v333M346 110v333M439 110v333M532 110v333"/></g>
-          <g class="nic-group">
-            <g transform="translate(134 146)"><rect width="53" height="204" rx="4" fill="#263b3d" stroke="#5d8589"/><rect x="11" y="18" width="31" height="78" rx="2" fill="#1d2c2f" stroke="#83b0a8"/><rect x="11" y="113" width="31" height="72" rx="2" fill="#1d2c2f" stroke="#83b0a8"/><rect x="17" y="29" width="19" height="11" rx="1" fill="#e5b56e"/><rect x="17" y="124" width="19" height="11" rx="1" fill="#e5b56e"/></g>
-            <g transform="translate(227 146)"><rect width="53" height="204" rx="4" fill="#263b3d" stroke="#5d8589"/><rect x="11" y="18" width="31" height="78" rx="2" fill="#1d2c2f" stroke="#83b0a8"/><rect x="11" y="113" width="31" height="72" rx="2" fill="#1d2c2f" stroke="#83b0a8"/><rect x="17" y="29" width="19" height="11" rx="1" fill="#e5b56e"/><rect x="17" y="124" width="19" height="11" rx="1" fill="#e5b56e"/></g>
-            <g transform="translate(320 146)"><rect width="53" height="204" rx="4" fill="#263b3d" stroke="#5d8589"/><rect x="11" y="18" width="31" height="78" rx="2" fill="#1d2c2f" stroke="#83b0a8"/><rect x="11" y="113" width="31" height="72" rx="2" fill="#1d2c2f" stroke="#83b0a8"/><rect x="17" y="29" width="19" height="11" rx="1" fill="#e5b56e"/><rect x="17" y="124" width="19" height="11" rx="1" fill="#e5b56e"/></g>
-            <g transform="translate(413 146)"><rect width="53" height="204" rx="4" fill="#263b3d" stroke="#5d8589"/><rect x="11" y="18" width="31" height="78" rx="2" fill="#1d2c2f" stroke="#83b0a8"/><rect x="11" y="113" width="31" height="72" rx="2" fill="#1d2c2f" stroke="#83b0a8"/><rect x="17" y="29" width="19" height="11" rx="1" fill="#e5b56e"/><rect x="17" y="124" width="19" height="11" rx="1" fill="#e5b56e"/></g>
-            <g transform="translate(506 146)"><rect width="53" height="204" rx="4" fill="#263b3d" stroke="#5d8589"/><rect x="11" y="18" width="31" height="78" rx="2" fill="#1d2c2f" stroke="#83b0a8"/><rect x="11" y="113" width="31" height="72" rx="2" fill="#1d2c2f" stroke="#83b0a8"/><rect x="17" y="29" width="19" height="11" rx="1" fill="#e5b56e"/><rect x="17" y="124" width="19" height="11" rx="1" fill="#e5b56e"/></g>
-          </g>
-          <g class="sc-group"><rect x="103" y="384" width="222" height="34" rx="3" fill="#29363d" stroke="#596f7c"/><rect x="365" y="384" width="222" height="34" rx="3" fill="#29363d" stroke="#596f7c"/><path d="M124 391v20m31-20v20m31-20v20m31-20v20m31-20v20m31-20v20M386 391v20m31-20v20m31-20v20m31-20v20m31-20v20m31-20v20" stroke="#637e8c" stroke-width="3"/></g>
-          <g class="cable-drawing">
-            <path d="M327 286 C290 370, 232 354, 225 306 S175 251, 151 335 S100 408, 107 472" fill="none" stroke="#7fc8c5" stroke-width="5" stroke-linecap="round" stroke-dasharray="1 9"/>
-            <path d="M327 286 C290 370, 232 354, 225 306 S175 251, 151 335 S100 408, 107 472" fill="none" stroke="#72d3c5" stroke-width="2.3" stroke-linecap="round"/>
-            <g transform="translate(309 264) rotate(28)"><rect x="0" y="0" width="28" height="39" rx="3" fill="url(#plug-grad)" stroke="#d9edf1"/><rect x="6" y="-13" width="16" height="16" rx="2" fill="#cfa871"/><path d="M11 4v30M18 4v30" stroke="#44575f" opacity=".6"/></g>
-            <g transform="translate(88 472) rotate(-18)"><rect x="0" y="0" width="37" height="19" rx="3" fill="#b2c9cb" stroke="#e7f5f2"/><rect x="35" y="5" width="20" height="9" rx="1" fill="#d8af78" stroke="#edd5a7"/></g>
-          </g>
-          <g font-family="IBM Plex Mono, monospace" font-size="11" fill="#a8bdc2" letter-spacing="1">
-            <text x="106" y="133">5 × NIC</text><text x="106" y="373">SC PORT RAILS</text><text x="87" y="499">SC</text><text x="338" y="268">SFP</text>
-            <text x="94" y="82">TASKBOARD / CAD-CONSTRAINED</text><text x="478" y="492">NOT TO SCALE</text>
-          </g>
-          <g><circle cx="327" cy="286" r="30" fill="none" stroke="#eab574" stroke-dasharray="4 6" class="target-pulse"/><path d="M318 286h18M327 277v18" stroke="#eab574" stroke-width="1.5"/><circle cx="327" cy="286" r="3" fill="#eab574"/></g>
-          <g><path d="M327 315v24h98" stroke="#eab574" stroke-width="1" fill="none"/><text x="430" y="342" fill="#eab574" font-family="IBM Plex Mono, monospace" font-size="11">CONTACT HANDOFF</text></g>
-        </svg>
-        <div class="figure-bottom"><span><i class="legend-nic"></i> STRUCTURED TARGETS</span><span><i class="legend-cable"></i> FLEXIBLE CABLE</span><span><i class="legend-focus"></i> HANDOFF</span></div>
-      </div>
+      <figure class="hero-visual hero-photograph">
+        <div class="figure-top"><span>THE AI FOR INDUSTRY CHALLENGE</span><span class="figure-live">THE REAL WORKCELL</span></div>
+        <img src="https://cdn.prod.website-files.com/65ef6590d3b13c549fc95d9b/6996b570a737cb0705c50da5_run-on-real-hardware.jpg" alt="Official Intrinsic photograph illustrating the AI for Industry Challenge physical robot workcell and cable-handling task." width="900" height="640" fetchpriority="high" decoding="async">
+        <figcaption class="figure-bottom">PHOTOGRAPH: <a href="https://www.intrinsic.ai/events/ai-for-industry-challenge" target="_blank" rel="noopener noreferrer">INTRINSIC / AI FOR INDUSTRY CHALLENGE</a> <span>OFFICIAL EVENT IMAGE</span></figcaption>
+      </figure>
 
       <div class="hero-scroll">SCROLL TO EXPLORE <span aria-hidden="true">↓</span></div>
     </section>
@@ -339,7 +309,7 @@
           <p>I came into this competition unsure whether someone without a current robotics background, a powerful workstation, or a research lab could meaningfully compete. I left with a top-ten finish, a hardware test I will remember for the rest of my life, and a method for approaching technical problems outside my formal expertise.</p>
           <p>That is a more useful lesson than “AI replaces experts.” Deep expertise still matters. Physics still wins arguments. The robot still has to move, and the evidence still has to be real. But a well-designed AI engineering system can let one person explore an unfamiliar field at a pace and depth that would have been difficult to imagine a few years ago.</p>
           <p class="closing-statement">I couldn't afford to iterate faster, so I built a system that could iterate without me.<br><em>I managed the system. The system managed the project.</em></p>
-          <div class="closing-byline"><div class="closing-rule"></div><div><strong>Legedith</strong><span>Independent participant · 2026 AI for Industry Challenge</span></div></div>
+          <div class="closing-byline"><div class="closing-rule"></div><div><strong>Jatin Dheniwal</strong><span>Independent participant · 2026 AI for Industry Challenge</span></div></div>
         </section>
 
         <section id="sources" class="sources-section">
@@ -358,6 +328,6 @@
       </article>
     </div>
   </main>
-  <footer class="site-footer"><a class="footer-wordmark" href="#top">L<span>.</span> / FIELD NOTES</a><span>AI FOR INDUSTRY CHALLENGE · 2026</span><a href="#top">BACK TO TOP ↑</a></footer>
+  <footer class="site-footer"><a class="footer-wordmark" href="#top">JATIN DHENIWAL<span>.</span></a><span>AI FOR INDUSTRY CHALLENGE · 2026</span><a href="#top">BACK TO TOP ↑</a></footer>
 </body>
 </html>
