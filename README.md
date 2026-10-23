@@ -1,7 +1,9 @@
-# I couldn't afford to iterate faster. So I built a system that could.
+# I Entered a Global Robotics Challenge With a $20 AI Subscription.
 
-An old laptop. A personal AI subscription. An autonomous engineering harness. And a return to robotics that ended in the top ten of Intrinsic's AI for Industry Challenge.
+## Then I Built the Team I Couldn't Afford.
 
-**[Read the full story](https://legedith.github.io/aic/)**
+*By Jatin Dheniwal*
 
-The story covers qualification, Flowstate, robot perception, force-guided insertion, and the lessons of testing on real hardware.
+One engineer, an aging laptop, a challenge involving two tiny fiber-optic connectors, and a system of AI agents built to keep experimenting when I couldn't.
+
+[**Read the story →**](https://legedith.github.io/aic/)
