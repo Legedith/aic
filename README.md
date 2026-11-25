@@ -1,9 +1,7 @@
-# I Entered a Global Robotics Challenge With a $20 AI Subscription.
+# I Couldn't Iterate Fast, So I Built a System That Could
 
-## Then I Built the Team I Couldn't Afford.
+27 Oct 2026 · @JS
 
-*By Jatin Dheniwal*
+In 2026 I finished 8th in the world at a robotics challenge run by Intrinsic, an Alphabet company. I did it with no robotics degree, a four-year gap since I last touched ROS, a 2018 laptop with a GTX 1660, and a $20 ChatGPT plan.
 
-One engineer, an aging laptop, a challenge involving two tiny fiber-optic connectors, and a system of AI agents built to keep experimenting when I couldn't.
-
-[**Read the story →**](https://legedith.github.io/aic/)
+[Read the full story](https://legedith.github.io/aic/)
