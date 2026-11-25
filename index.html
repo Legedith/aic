@@ -6,16 +6,16 @@
   <meta name="theme-color" content="#0c1115">
   <meta name="color-scheme" content="dark">
   <meta name="author" content="Jatin Dheniwal">
-  <meta name="description" content="Jatin Dheniwal entered a global robotics competition with an old laptop and a $20 AI subscription, then built an engineering team out of autonomous agents.">
+  <meta name="description" content="Jatin Dheniwal on finishing eighth in the 2026 Intrinsic AI for Industry Challenge with an aging laptop, a $20 ChatGPT plan, and an autonomous engineering system.">
   <meta property="og:type" content="article">
-  <meta property="og:title" content="I Entered a Global Robotics Challenge With a $20 AI Subscription. Then I Built the Team I Couldn't Afford.">
-  <meta property="og:description" content="One engineer, no robotics lab, an aging laptop and an AI team built from scratch. A technical story about perception, touch and a top-ten finish.">
+  <meta property="og:title" content="I Couldn&#39;t Iterate Fast, So I Built a System That Could">
+  <meta property="og:description" content="One engineer. A $20 AI plan. A slow laptop. A top-ten finish in a global robotics challenge.">
   <meta property="og:url" content="https://legedith.github.io/aic/">
   <meta property="og:image" content="https://cdn.prod.website-files.com/65ef6590d3b13c549fc95d9b/6996b570a737cb0705c50da5_run-on-real-hardware.jpg">
   <meta property="og:image:alt" content="Official Intrinsic AI for Industry Challenge robot workcell photograph">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="I Entered a Global Robotics Challenge With a $20 AI Subscription">
-  <meta name="twitter:description" content="By Jatin Dheniwal. How I built the AI engineering team I could not afford, and made it to the final ten.">
+  <meta name="twitter:title" content="I Couldn&#39;t Iterate Fast, So I Built a System That Could">
+  <meta name="twitter:description" content="The story of my robotics challenge, the AI harness I built, and the final that I still cannot explain.">
   <link rel="canonical" href="https://legedith.github.io/aic/">
   <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,7 +24,7 @@
   <style>body{margin:0;background:#0c1115;color:#e7eeeb;font-family:Georgia,serif}</style>
   <link rel="stylesheet" href="./assets/style.css">
   <script defer src="./assets/main.js"></script>
-  <title>With a $20 AI Subscription, I Built the Team I Couldn't Afford · Jatin Dheniwal</title>
+  <title>I Couldn&#39;t Iterate Fast, So I Built a System That Could · Jatin Dheniwal</title>
 </head>
 <body>
   <a class="skip" href="#story">Skip to story</a>
@@ -32,316 +32,127 @@
 
   <header class="site-header">
     <a href="#top" class="wordmark" aria-label="Jatin Dheniwal article home"><span class="wordmark-mark">JD<span class="wordmark-point">.</span></span><span>JATIN DHENIWAL <span class="wordmark-muted">/ FIELD NOTES</span></span></a>
-    <nav class="site-nav" aria-label="On this page">
-      <a href="#qualification">The start</a>
-      <a href="#harness">The harness</a>
-      <a href="#perception">Perception</a>
-      <a href="#insertion">Insertion</a>
-      <a href="#ending">The result</a>
-    </nav>
-    <a class="header-source" href="#sources">References <span aria-hidden="true">↗</span></a>
+    <nav class="site-nav" aria-label="On this page"><a href="#challenge">The challenge</a><a href="#qualification">Qualification</a><a href="#phase-one">Phase 1</a><a href="#phase-two">Phase 2</a><a href="#takeaways">Lessons</a></nav>
+    <a class="header-source" href="#appendix">Technical appendix <span aria-hidden="true">↗</span></a>
   </header>
 
   <main id="top">
     <section class="hero" aria-labelledby="hero-title">
       <div class="hero-content">
-        <div class="eyebrow"><span class="live-dot" aria-hidden="true"></span> ENGINEERING FIELD NOTE <span class="eyebrow-divider">/</span> 2026</div>
-        <h1 id="hero-title">I Entered a Global Robotics Challenge With a $20 AI Subscription.<br><em>Then I Built the Team I Couldn't Afford.</em></h1>
-        <p class="hero-dek">I was one engineer up against research labs and industry teams. My robot needed to locate, carry, and feel its way into tiny connector ports. To compete, I first had to build something else: a team of AI agents that could run the engineering process itself.</p>
-        <p class="hero-byline">BY <strong>JATIN DHENIWAL</strong> <span>·</span> A SIX-MONTH ROBOTICS EXPERIMENT</p>
-        <div class="hero-actions">
-          <a class="button-primary" href="#story">Read the story <span aria-hidden="true">↘</span></a>
-          <span class="reading-time"><span class="small-square" aria-hidden="true"></span> THE WHOLE STORY, FROM GAZEBO TO HARDWARE</span>
-        </div>
+        <div class="eyebrow"><span class="live-dot" aria-hidden="true"></span> AI FOR INDUSTRY CHALLENGE <span class="eyebrow-divider">/</span> 2026</div>
+        <h1 id="hero-title">I Couldn't Iterate Fast, So I Built a System That Could</h1>
+        <p class="hero-byline">27 Oct 2026 · @JS</p>
+        <div class="hero-actions"><a class="button-primary" href="#story">Read the story <span aria-hidden="true">↘</span></a></div>
       </div>
-
       <figure class="hero-visual hero-photograph">
-        <div class="figure-top"><span>THE AI FOR INDUSTRY CHALLENGE</span><span class="figure-live">THE REAL WORKCELL</span></div>
-        <img src="https://cdn.prod.website-files.com/65ef6590d3b13c549fc95d9b/6996b570a737cb0705c50da5_run-on-real-hardware.jpg" alt="Official Intrinsic photograph illustrating the AI for Industry Challenge physical robot workcell and cable-handling task." width="900" height="640" fetchpriority="high" decoding="async">
-        <figcaption class="figure-bottom">PHOTOGRAPH: <a href="https://www.intrinsic.ai/events/ai-for-industry-challenge" target="_blank" rel="noopener noreferrer">INTRINSIC / AI FOR INDUSTRY CHALLENGE</a> <span>OFFICIAL EVENT IMAGE</span></figcaption>
+        <div class="figure-top"><span>AI FOR INDUSTRY CHALLENGE</span><span class="figure-live">REAL HARDWARE</span></div>
+        <img src="https://cdn.prod.website-files.com/65ef6590d3b13c549fc95d9b/6996b570a737cb0705c50da5_run-on-real-hardware.jpg" alt="Official photograph of the physical robotics workcell from Intrinsic's challenge." width="900" height="640" fetchpriority="high" decoding="async">
+        <figcaption class="figure-bottom">PHOTOGRAPH: <a href="https://www.intrinsic.ai/events/ai-for-industry-challenge" rel="noopener noreferrer" target="_blank">INTRINSIC</a></figcaption>
       </figure>
-
-      <div class="hero-scroll">SCROLL TO EXPLORE <span aria-hidden="true">↓</span></div>
     </section>
-
-    <div class="metrics" aria-label="Challenge figures and personal results">
-      <div class="metric"><strong>5,000</strong><span>developers entered <sup><a href="#sources">1</a></sup></span></div>
-      <div class="metric"><strong>0.15–0.2×</strong><span>local simulation speed</span></div>
-      <div class="metric"><strong>19th</strong><span>qualification, by my recollection</span></div>
-      <div class="metric"><strong>10 / 10</strong><span>last hardware test, my result</span></div>
-      <div class="metric"><strong>8th</strong><span>official overall finish, my result</span></div>
-    </div>
-
     <div class="article-shell" id="story">
       <aside class="article-rail" aria-label="Article navigation">
         <div class="rail-title">IN THIS STORY</div>
-        <a href="#opening" data-rail>00 <span>Ten insertions</span></a>
-        <a href="#qualification" data-rail>01 <span>Starting behind</span></a>
-        <a href="#harness" data-rail>02 <span>Building the engineer</span></a>
-        <a href="#phase-one" data-rail>03 <span>New environment</span></a>
-        <a href="#perception" data-rail>04 <span>Seeing the board</span></a>
-        <a href="#insertion" data-rail>05 <span>The final millimeters</span></a>
-        <a href="#hardware" data-rail>06 <span>The real robot</span></a>
-        <a href="#ending" data-rail>07 <span>What stayed with me</span></a>
-        <div class="rail-line"></div>
-        <div class="rail-micro">Built with source control.<br>Written from experience.</div>
+        <a href="#challenge" data-rail>01 <span>The challenge, in plain words</span></a>
+        <a href="#qualification" data-rail>02 <span>Qualification: build the team, not the policy</span></a>
+        <a href="#phase-one" data-rail>03 <span>Phase 1: a visual tool, a hidden door, and a very good vision model</span></a>
+        <a href="#phase-two" data-rail>04 <span>Phase 2: real hardware, and a deliberately dumb policy</span></a>
+        <a href="#takeaways" data-rail>05 <span>What I took away</span></a>
+        <a href="#appendix" data-rail>06 <span>Appendix: how the Phase 2 system worked</span></a>
+        <a href="#workflow" data-rail>07 <span>The workflow around it</span></a>
+        <a href="#caveats" data-rail>08 <span>Caveats</span></a>
       </aside>
+      <article class="article-body verbatim-article">
+        <section class="chapter intro" id="opening">
+          <p class="story-lead">In 2026 I finished 8th in the world at a robotics challenge run by Intrinsic, an Alphabet company. I did it with no robotics degree, a four-year gap since I last touched ROS, a 2018 laptop with a GTX 1660, and a $20 ChatGPT plan.</p>
+<p>The short version of how: I couldn't iterate fast, so I stopped trying to solve the problem myself. I built a system that could iterate without me, and then I managed the system. This is the story of that, including the part where my final scored run didn't match my last practice run on the real robot, and I still don't know why.</p>
+<p>A quick map for the road ahead: a three-month simulation qualifier, a six-week phase in Intrinsic's Flowstate where I got a vision model and a trick with exported processes, and a one-month finale on a real UR5e robot at Intrinsic's headquarters, controlled remotely from my desk.</p>
 
-      <article class="article-body">
-        <section id="opening" class="chapter opening">
-          <div class="chapter-marker">00 / THE SECOND CLICK</div>
-          <h2>The robot found the port.<br><em>It still couldn't finish.</em></h2>
-          <p class="lead">The clever part was already done. The robot had found the connector, carried a flexible cable across a crowded board, and lined up a tiny plug with the opening. It pushed. The connector looked almost seated.</p>
-          <p>But almost is an expensive word in robotics.</p>
-          <p>I was working remotely on a physical robot at Intrinsic's headquarters, trying to solve a problem I had never attempted with my own hands. I had not even handled an SC connector before. Someone familiar with the hardware finally told me what I was missing: <strong>the connector could click twice.</strong> The first click did not mean the insertion was finished. There was another bit of travel, another mechanical latch, and an entirely different definition of success.</p>
-          <p>That was the kind of problem I had signed up to solve. Not just moving a robot between coordinates, but getting it to notice what contact was telling it. What would I do if I were holding the cable? Feel an edge, ease off, adjust my wrist, try a different direction, keep pushing only when I could feel that the plug was going in. I even asked friends to reason through the movements with me. It was a surprisingly useful way to think about force sensing.</p>
-          <p>The strange part was how I got there. I had no robotics degree, no research group, and no company hardware budget. My computer was an old laptop that could barely run the simulator at a useful speed. My AI tooling was a roughly $20-a-month personal subscription. Yet I was competing in a challenge that eventually drew <strong>5,000 developers from 115 countries</strong>, including people who worked on robotics for a living.</p>
-          <p>When the competition ended, I had a final personal hardware session with ten successful insertions and an official eighth-place finish. Those were separate evaluations, and the gap between them still bothers me. But the most important thing I built over those months was not the insertion controller.</p>
-          <p>It was the engineering team I could not afford to hire.</p>
         </section>
-
-        <section id="qualification" class="chapter">
-          <div class="chapter-marker">01 / MARCH TO MAY</div>
-          <h2>The easiest version of the problem was <em>already hard.</em></h2>
-          <p>I had been away from robotics for roughly four or five years. The last time I worked seriously with it, ROS Noetic was new and ROS 2 was still finding its feet. Since then, most of my engineering had been about AI. I had never studied robotics or control theory formally, and suddenly I was trying to solve a task that combined perception, motion planning, contact mechanics, and flexible cables.</p>
-          <p>When I saw Intrinsic's <a href="https://www.intrinsic.ai/events/ai-for-industry-challenge" target="_blank" rel="noopener noreferrer">AI for Industry Challenge</a>, I wanted to return. Then I looked at the actual task.</p>
-          <p>The full challenge involved a flexible fiber-optic cable, an SFP module on one end and an SC plug on the other, and a taskboard full of small, adjustable fixtures. The robot had to identify the right parts, grasp a connector, lift it out of its holder, move the dangling cable without catching it on the board, and finally insert each end into its assigned port. The last few millimeters mattered most. A slight misalignment could turn forward motion into a jam, and a connector that looked seated might still be unlatched.</p>
-
-          <div class="task-geometry-note" aria-label="The actual four zones of the challenge board">
-            <div class="task-geometry-top">THE OFFICIAL TASKBOARD / FOUR FUNCTIONAL ZONES</div>
-            <div class="task-zones">
-              <div><span>01 / INSERT</span><strong>NIC cards</strong><p>Up to five network cards on adjustable mounts, with two SFP ports per card.</p></div>
-              <div><span>02 / INSERT</span><strong>SC port rails</strong><p>Optical ports distributed across two rails, with positions that could vary.</p></div>
-              <div><span>03 + 04 / PICK</span><strong>Cable fixtures</strong><p>Staging areas for the cable ends, separate from the insertion destinations.</p></div>
-            </div>
-            <a href="https://github.com/intrinsic-dev/aic/blob/main/docs/task_board_description.md" target="_blank" rel="noopener noreferrer">See Intrinsic's official taskboard description and CAD links ↗</a>
-          </div>
-
-          <p>Qualification was the gentle introduction. The robot already held one connector in a known grasp, and the correct destination was specified. But the board and target positions were randomized. I still had to make the policy find the opening, approach it safely, and finish the insertion. Even so, it was a serious controls and perception problem. Intrinsic's <a href="https://github.com/intrinsic-dev/aic/blob/main/docs/qualification_phase.md" target="_blank" rel="noopener noreferrer">public qualification specification</a> describes the small grasp deviations and board randomization that made the task nontrivial.</p>
-          <p>The field only made the gap feel larger. Research labs, engineers with years of controls experience, university teams, companies, and independent developers were all trying to solve the same thing. I did not have a lab to ask for another experiment, another GPU, or another pair of hands.</p>
-
-          <div class="phase-timeline" aria-label="Official 2026 challenge phase dates">
-            <div class="timeline-track"></div>
-            <div class="phase"><div class="phase-top"><span class="phase-dot"></span><span>QUALIFICATION</span></div><strong>02 MAR → 15 MAY</strong><p>Gazebo simulation. Held connector to target port.</p></div>
-            <div class="phase"><div class="phase-top"><span class="phase-dot"></span><span>PHASE 1</span></div><strong>28 MAY → 14 JUL</strong><p>Full cable handling in simulation, using Flowstate.</p></div>
-            <div class="phase"><div class="phase-top"><span class="phase-dot"></span><span>PHASE 2</span></div><strong>27 JUL → 25 AUG</strong><p>Deployment and refinement with real hardware.</p></div>
-            <div class="timeline-foot">Development windows from the official <a href="https://github.com/intrinsic-dev/aic/blob/main/docs/overview.md" target="_blank" rel="noopener noreferrer">challenge overview</a>. Evaluation continued afterward.</div>
-          </div>
-
-          <p>My computer did not help. I was working on an aging laptop with an Intel i7 and a GTX 1660-class GPU. On a good day Gazebo managed a real-time factor of about 0.15 to 0.2. One minute of simulated motion could take five to seven minutes to compute. The official toolkit recommended considerably more powerful hardware. I also had a personal ChatGPT subscription, around twenty dollars a month, rather than an enterprise AI budget.</p>
-          <p>Initially I went down the obvious paths. Basic OpenCV features and shape extraction, small object-detection experiments, learning-based approaches. I explored ideas such as YOLO, HIL-SERL and H-DAgger, looking for something I could make work within my constraints. What I kept running into was that my real bottleneck was not finding another robotics paper.</p>
-          <p>It was the rate at which I could run an experiment, understand what went wrong, and try something better. <strong>I could not buy more compute or a bigger team. I had to change how the engineering itself was done.</strong></p>
-        </section>
-
-        <section id="harness" class="chapter">
-          <div class="chapter-marker">02 / THE FIRST BREAKTHROUGH</div>
-          <h2>So I stopped building the robot. <em>I started building the engineer.</em></h2>
-          <p>I created a fresh Ubuntu environment on a dedicated drive partition and opened the project in VS Code with Codex. But instead of asking Codex to write a policy and hoping for the best, I gave it a different job: build a development environment that it could operate, diagnose, and improve itself.</p>
-          <p>At first, that meant installing dependencies, running the official examples, checking the simulator, and packaging a policy. When something failed, my instinct changed. I stopped asking, <em>“How do I fix this?”</em> and started asking, <em>“Why was my agent unable to diagnose this, and what could I give it so it could solve the next one?”</em></p>
-          <p>That question gradually became the architecture of my entire entry. If a dependency failed, Codex needed a diagnostic procedure. If a simulation stalled, it needed a way to tell a slow run from a frozen one. If an experiment produced a promising result, it needed to preserve the code, conditions, and evidence, not just tell me it had succeeded.</p>
-
-          <div class="visual-module harness-module" aria-labelledby="harness-visual-title">
-            <div class="visual-head"><div><span class="visual-kicker">SYSTEM DIAGRAM / 01</span><h3 id="harness-visual-title">The engineering loop I built</h3></div><button class="subtle-button" type="button" id="harness-play" aria-label="Pause engineering loop animation">Pause <span aria-hidden="true">Ⅱ</span></button></div>
-            <div class="harness-graph" id="harness-graph">
-              <div class="harness-node human-node" data-stage="0"><small>HUMAN</small><b>Frame the problem</b><span>Goals, constraints, judgments</span></div>
-              <span class="flow-arrow" aria-hidden="true">→</span>
-              <div class="harness-node orchestrator-node" data-stage="1"><small>ORCHESTRATOR</small><b>Decompose &amp; route</b><span>Cost-aware reasoning</span></div>
-              <span class="flow-arrow" aria-hidden="true">→</span>
-              <div class="harness-node specialist-node" data-stage="2"><small>SPECIALISTS</small><b>Gather focused context</b><span>Research · docs · prior failures</span></div>
-              <span class="flow-arrow" aria-hidden="true">→</span>
-              <div class="harness-node packet-node" data-stage="3"><small>PROBLEM PACKET</small><b>Isolate the decision</b><span>Small, relevant context</span></div>
-              <span class="flow-arrow" aria-hidden="true">→</span>
-              <div class="harness-node executor-node" data-stage="4"><small>SOLVER + TOOLS</small><b>Build, run, inspect</b><span>Tests · logs · retries</span></div>
-            </div>
-            <div class="feedback-path"><span aria-hidden="true">↶</span> Validation and failures feed the knowledge base, which informs the next iteration.</div>
-            <div class="visual-foot">The key roles in my engineering harness, simplified to show the experiment loop.</div>
-          </div>
-
-          <p>By the time it matured, the harness was far beyond a set of prompts. It had organized knowledge files, reusable skills, test and packaging workflows, deterministic checks, and judgment-based reviews of logs and behavior. Different agents had distinct responsibilities and their own working contexts. A stronger reasoning model could orchestrate; cheaper models could retrieve documentation or assemble evidence; another focused model could work on a tightly scoped engineering problem.</p>
-          <p>One agent might investigate a failing build. Another would compare experiment logs. Another could draft the fix. If a result survived the checks, it was added to the project's working knowledge. If it failed, the failure itself became part of the record. The point was not to spawn agents indiscriminately. Every additional agent needed a job, a context boundary, and a way for me to tell whether its output was useful.</p>
-          <p>One of my favorite patterns was to have an agent assemble a compact <strong>problem packet</strong>. Instead of feeding an expensive reasoning model the entire project history, it would get the exact error, relevant source, constraints, prior attempts and acceptance criteria. If it needed something else, it requested targeted research. This was as much about conserving a limited model budget as it was about correctness.</p>
-          <p>I kept durable notes so a session could end without erasing months of learning. The agent was expected to run experiments, inspect the results, notice repeated failure signatures, retry when it made sense, and preserve the conditions under which something had actually worked. Some iterations continued over long stretches with little intervention, provided the laptop and internet held up.</p>
-          <p>That did not make me unnecessary. My job shifted upward. I decided which experiment was worth running, challenged weak conclusions, and made sure an agent could tell the difference between “the code compiled,” “the simulator ran,” and “the robot actually succeeded.” The more reliable the harness became, the more of the mechanical work it could take over.</p>
-          <p>While that system was growing, I still needed a qualification policy. I eventually trained a small YOLO-based detector from data collected using the organizer's public example infrastructure. I deliberately stopped chasing a perfect insertion policy. Qualification rewarded several aspects of performance, so I focused on earning enough points reliably to advance. With my simulator running five to seven times slower than real time and official submissions limited, an elegant experiment I could not finish was worth less than a simple one I could actually validate.</p>
-          <p>By my recollection, I finished qualification around <strong>19th, at roughly 220 points</strong>. It was enough to advance. The exact points figure is from memory, but the feeling was definite: the tiny lab I had built on my laptop had survived its first real test. Then, just as my workflow started to feel reliable, the next phase changed the rules of the game.</p>
-
-          <blockquote class="quote-block"><span class="quote-mark">“</span><p>The real question was no longer whether I could fix a problem. It was whether I could build a system that would know what to try next.</p></blockquote>
-        </section>
-
-        <section id="phase-one" class="chapter">
-          <div class="chapter-marker">03 / PHASE 1</div>
-          <h2>A better platform. <em>A completely new bottleneck.</em></h2>
-          <p>Phase 1 changed the problem dramatically. We no longer started with a connector already in the gripper. The robot had to locate the source cable, determine how to grasp it, extract an end, carry it across the workspace, and insert both ends in sequence. The cable itself was now part of the manipulation problem, not merely something trailing from a held connector. And we had about six weeks.</p>
-          <p>We also gained access to <a href="https://www.intrinsic.ai/flowstate" target="_blank" rel="noopener noreferrer">Intrinsic Flowstate</a>, a development environment that combines a graphical process editor with robot skills, simulation, and programmable capabilities. Intrinsic publicly describes building behavior trees from skills and control flows, extending them through Python or C++, and testing in simulation before using hardware. We were also given access to the Intrinsic Vision Model, or IVM.</p>
-          <figure class="story-photo">
-            <img src="https://cdn.prod.website-files.com/65ef6590d3b13c549fc95d9b/68fc0c3bdb8ae09b09cb2bf4_Screenshot%202025-10-24%20at%201.56.19%E2%80%AFPM-p-800.png" alt="Intrinsic's publicly published Flowstate simulation of the AI for Industry cable manipulation workcell, showing a robot above an electronics taskboard." loading="lazy" decoding="async" width="800" height="525">
-            <figcaption>FLOWSTATE SIMULATION / <a href="https://www.intrinsic.ai/events/ai-for-industry-challenge" target="_blank" rel="noopener noreferrer">OFFICIAL INTRINSIC CHALLENGE IMAGE</a></figcaption>
-          </figure>
-
-          <p>Flowstate was powerful, but it was visual-first. My qualification harness had learned to operate a conventional source-code project. A visual process editor did not fit that workflow naturally. I could build things manually in the UI, but that would put me back in the position of being the bottleneck.</p>
-          <p>Eventually I found a way to keep the process itself in my normal engineering loop. Instead of treating the graphical editor as the only place where work existed, I used locally versioned process artifacts and programmatic tooling alongside Flowstate's visual interface. The publicly available <a href="https://github.com/intrinsic-ai/sdk" target="_blank" rel="noopener noreferrer">Intrinsic SDK</a> provided a useful development foundation. I could compare versions, validate changes, preserve known-good work, and recover quickly when an editing session or remote environment did not cooperate.</p>
-          <p>That was my second harness. The first had taught Codex to operate a robotics codebase. The second let the agent help me manage a visual robotics workflow. My human loop became: watch a run, inspect the evidence, decide what was wrong, describe the next experiment, then review the generated change before testing again. It brought the pace of AI-assisted iteration back to a problem that initially seemed to require constant manual editing.</p>
-          <p>The need for that workflow became obvious as soon as I started dealing with the cable. Simulation could send it into large, awkward arcs. The robot might reach the correct grasp, only for the cable to swing into the next motion's path. I built custom motions to twist, lift, and route the free cable through the environment. Those were not the behaviors I originally wanted to spend six weeks writing, but without them the supposedly simple pick-and-insert task could not even reach its final stage.</p>
-          <p>Later, physical cable behavior would turn out to be easier to manage in several respects. At the time, though, every simulation-specific workaround made the workflow more important: the less time I spent rebuilding a process, the more time I had left to actually study the robot.</p>
-          <p>Then Flowstate gave me access to something that made much of my qualification perception work feel obsolete: the Intrinsic Vision Model. The next question was no longer how to make my little detector more capable. It was how far I could push the accuracy of an already excellent pose estimator.</p>
-        </section>
-
-        <section id="perception" class="chapter">
-          <div class="chapter-marker">04 / PERCEPTION FIRST</div>
-          <h2>The moment I realized <em>I could throw away my clever policy.</em></h2>
-          <p>The Intrinsic Vision Model is designed to detect objects and estimate their 3D positions and orientations from ordinary RGB camera images. Its publicly documented research basis, <a href="https://www.intrinsic.ai/publications/3pt-cvpr2026" target="_blank" rel="noopener noreferrer">3PT, the 3D-Object Perception Transformer</a>, uses 3D model prompts, multiview geometry and refinement to estimate six-degree-of-freedom poses. The paper received a CVPR 2026 Highlight recognition.</p>
-          <p>I had spent considerable effort squeezing useful estimates out of a tiny detector on my machine. Then I tried IVM from the robot's home viewpoint. With very little additional work, I was seeing repeatable results around 3 to 5 mm for the components I cared about. That was already competitive with what I had struggled to build.</p>
-          <p>Instead of immediately writing a more sophisticated motion policy, I went and read the 3PT work. My question became: <em>What camera viewpoints make this estimator most reliable on this specific taskboard, and what happens when I combine observations?</em></p>
-          <p>I asked Codex to help build a scan laboratory. It tested candidate viewpoints, camera distances, approach angles, repeated observations, and fusion strategies. Some results were striking. In simulation, with known taskboard geometry and an evaluation reference, parts of the constrained reconstruction reached submillimeter error. I want to be precise about that: <strong>those numbers were geometry-constrained simulation results, not a promise that the raw camera model achieved submillimeter hardware accuracy in every scene.</strong></p>
-          <p>The next improvement came from treating the taskboard as a system, not a bag of unrelated detections.</p>
-
-          <div class="visual-module scan-module" aria-labelledby="scan-visual-title">
-            <div class="visual-head"><div><span class="visual-kicker">GEOMETRIC INTUITION / 02</span><h3 id="scan-visual-title">Five noisy observations. One coherent board.</h3></div><div class="toggle-group" role="group" aria-label="Perception illustration mode"><button type="button" class="is-selected" data-scan-mode="raw" aria-pressed="true">Raw poses</button><button type="button" data-scan-mode="fused" aria-pressed="false">Constrain &amp; fuse</button></div></div>
-            <svg id="scan-svg" viewBox="0 0 760 340" role="img" aria-label="Conceptual top-down illustration of five NIC positions on parallel rails. Unconstrained pose observations have small offsets and rotations; applying known rail and board geometry reconciles them into a coherent arrangement.">
-              <g stroke="#35434a" stroke-width="1" stroke-dasharray="4 7"><path d="M50 48h660M50 110h660M50 172h660M50 234h660M50 296h660"/></g>
-              <g stroke="#38535a" stroke-width="15" stroke-linecap="round" opacity=".2"><path d="M116 58h520M116 120h520M116 182h520M116 244h520M116 306h520"/></g>
-              <g class="scan-raw-points" fill="#e8ad68" stroke="#edc393" stroke-width="1">
-                <g transform="translate(271 50) rotate(3)"><rect x="-64" y="-11" width="128" height="22" rx="3"/><circle cx="54" cy="0" r="3" fill="#1a252b"/></g>
-                <g transform="translate(286 125) rotate(-5)"><rect x="-64" y="-11" width="128" height="22" rx="3"/><circle cx="54" cy="0" r="3" fill="#1a252b"/></g>
-                <g transform="translate(266 166) rotate(4)"><rect x="-64" y="-11" width="128" height="22" rx="3"/><circle cx="54" cy="0" r="3" fill="#1a252b"/></g>
-                <g transform="translate(290 249) rotate(-3)"><rect x="-64" y="-11" width="128" height="22" rx="3"/><circle cx="54" cy="0" r="3" fill="#1a252b"/></g>
-                <g transform="translate(277 305) rotate(6)"><rect x="-64" y="-11" width="128" height="22" rx="3"/><circle cx="54" cy="0" r="3" fill="#1a252b"/></g>
-              </g>
-              <g class="scan-fused-points" fill="#78cdbb" stroke="#b9e9dd" stroke-width="1">
-                <rect x="215" y="47" width="128" height="22" rx="3"/><rect x="215" y="109" width="128" height="22" rx="3"/><rect x="215" y="171" width="128" height="22" rx="3"/><rect x="215" y="233" width="128" height="22" rx="3"/><rect x="215" y="295" width="128" height="22" rx="3"/>
-              </g>
-              <g stroke="#76949b" stroke-dasharray="3 5" opacity=".75"><path d="M393 54v248"/><path d="M410 54v248"/></g>
-              <g font-family="IBM Plex Mono,monospace" font-size="12" fill="#a0b2b7"><text x="43" y="29">BOARD-LOCAL / Y</text><text x="436" y="96">KNOWN PARALLEL RAILS</text><text x="436" y="116">SHARED ORIENTATION</text><text x="436" y="136">KNOWN COMPONENT RELATIONS</text></g>
-            </svg>
-            <p id="scan-explain" class="visual-caption" aria-live="polite">Raw estimates shown with deliberately exaggerated errors to illustrate the problem. These are not captured measurements.</p>
-            <div class="visual-foot">Structural constraint illustration, not a screenshot, benchmark plot, or literal reconstruction of the challenge board.</div>
-          </div>
-
-          <p>Five NIC cards sat in a known structural relationship on parallel rails. Their orientations had to be mutually consistent. Other fixtures had known relationships to those rails. Components sat on known planes and inside known regions of the board. Once I could estimate the larger, easier-to-see objects reliably, I could use those relationships to constrain the others.</p>
-          <p>This did two things. Averaging consistent observations could reduce noise. More importantly, impossible independent estimates could be rejected or corrected before they reached the motion planner. A card rotated wildly relative to its neighbors was less plausible than a small error in a camera observation. The whole board became one shared geometric hypothesis.</p>
-          <p>I also split observation into two scales. Initially, with an unknown board position, I moved to a high viewpoint and looked for a visible feature, often a NIC. I did not need an accurate board pose yet, only enough information to plan a safe closer scan. Each subsequent viewpoint improved the estimate. Once the static board was registered, I cached it and refreshed only the changing cable or connector state when needed.</p>
-          <p>This was the real breakthrough. Instead of trying to make a learned insertion policy robust to every centimeter of pose error, I was pushing uncertainty out of the manipulation stage. If I could reliably approach within a millimeter or two of the actual opening, the final contact behavior could be much simpler.</p>
-          <p>There was an important trap in that approach, which I discovered through testing: a geometric constraint is only as good as its coordinate frame. In one diagnostic, the raw SC detections looked sensible but an incorrect reference-frame assumption pulled the fused result away from them. That taught me not to confuse a very tidy-looking world model with a correct one. I learned to inspect raw estimates and constrained output separately.</p>
-          <p>I no longer needed the qualification policy to carry the whole challenge. I could use strong perception, known geometry, deliberate motion, and a small contact-aware state machine.</p>
-
-          <div class="insight"><span>DESIGN PRINCIPLE</span><strong>Make the problem easier before making the controller smarter.</strong><p>Spend sophistication where it removes uncertainty. Then let the last-stage behavior be as simple as the mechanics allow.</p></div>
-        </section>
-
-        <section id="insertion" class="chapter">
-          <div class="chapter-marker">05 / THE LAST MILLIMETERS</div>
-          <h2>Vision got me close. <em>Contact got me the rest of the way.</em></h2>
-          <p>When I say my final insertion was “visionless,” that needs a qualifier. I was not running a blind robot. Perception had already established the target, grasp, and path. The insertion controller simply stopped asking the camera for new images once it reached the last few millimeters. It worked with measured motion and force/torque information instead.</p>
-          <p>Before I tried to make a robot do this, I asked a much simpler question: <em>what would my own hand do?</em> Suppose I know approximately where a plug belongs, but I cannot rely on the exact visual position anymore. I move toward the opening. I feel contact. If the plug catches an edge, I do not immediately apply more force. I shift slightly, change the angle of my wrist, and try again. When the resistance changes and the plug begins to advance, I remember that progress. I do not throw it away just because my hand feels another little bump.</p>
-          <p>I asked friends to imagine and act through the movement with me. The useful part was not that we could perfectly model a connector by waving our hands around. It was discovering the sequence of questions a person answers unconsciously: <em>Am I touching the face? Is the opening above or to one side? Have I made axial progress? Am I wedged? Has the latch actually engaged?</em> Those questions mapped surprisingly well to a contact-state controller.</p>
-          <p>In other words, the robot did not need a new picture of the port every few milliseconds. It needed a way to tell the difference between touching the wrong place and moving through the right place. Vision handled the first part of the task; measured depth, force, torque, and compliance handled the rest.</p>
-          <p>For the SFP module, the handoff was on the order of a few millimeters from the mouth. For the SC plug, it could be closer still. A controller would descend gently, watch whether the connector actually advanced, and make small corrections if contact stopped that progress. Because SFP and SC geometry is different, the corrections could not be identical.</p>
-          <p>I explored several lateral search shapes: a two-frequency Lissajous path, an expanding spiral, and a serpentine or raster pattern that swept back and forth across an area. A search path needs to cover a plausible opening efficiently without asking the connector to skate across the face under uncontrolled load. The diagrams below show the mathematical patterns I experimented with, not an assertion that one specific trajectory was always active in the final submitted policy.</p>
-
-          <div class="visual-module search-module" aria-labelledby="search-visual-title">
-            <div class="visual-head"><div><span class="visual-kicker">CONTACT SEARCH / 03</span><h3 id="search-visual-title">Three ways to cover the port face</h3></div><div class="toggle-group" role="group" aria-label="Choose search trajectory"><button type="button" class="is-selected" data-search="lissajous" aria-pressed="true">Lissajous</button><button type="button" data-search="spiral" aria-pressed="false">Spiral</button><button type="button" data-search="raster" aria-pressed="false">Raster</button></div></div>
-            <svg id="search-svg" viewBox="0 0 760 355" role="img" aria-label="A mathematical search curve inside an abstract rectangular port-face search envelope.">
-              <defs><pattern id="search-grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="#2a3a40" stroke-width=".8"/></pattern></defs>
-              <rect x="16" y="16" width="728" height="323" rx="6" fill="url(#search-grid)"/>
-              <rect x="168" y="68" width="426" height="217" rx="8" fill="#111c20" stroke="#5e8589" stroke-width="2" stroke-dasharray="7 7"/>
-              <path d="M381 42v271M142 177h477" stroke="#40545c" stroke-dasharray="4 5"/>
-              <path id="search-path-shadow" fill="none" stroke="#68a9a9" stroke-opacity=".18" stroke-width="14" stroke-linecap="round"/>
-              <path id="search-path" fill="none" stroke="#e9b274" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
-              <circle id="search-tip" cx="381" cy="177" r="7" fill="#f9d29b" stroke="#0f1519" stroke-width="2"/>
-              <g font-family="IBM Plex Mono,monospace" font-size="11" fill="#a3b6bc"><text x="176" y="59">SEARCH ENVELOPE (ABSTRACT)</text><text x="620" y="177">+X</text><text x="383" y="29">+Y</text></g>
-            </svg>
-            <p id="search-explain" class="visual-caption" aria-live="polite">A smooth two-frequency sweep can visit many positions without abrupt direction changes.</p>
-            <div class="visual-foot">These are original parametric path illustrations. Real motion also depends on controller limits, contact and connector geometry.</div>
-          </div>
-
-          <p>Some of the hardest failures were not dramatic collisions. They were logical mistakes that looked, at first, like sensible safety behavior. An early recovery might touch the port face, see resistance, unload, and try again. But if the connector had already entered the opening, an unnecessary retreat could undo most of the useful motion. In several hardware traces the controller got deep into an SC insertion and then backed out after a small regression. That was painful to watch, because the robot had already solved the part I thought was difficult.</p>
-          <p>The better description of the strategy is an <strong>axial-progress-supervised compliant state machine with force-informed recovery</strong>. Measured depth tells you what stage of insertion you are in. Force and torque are useful directional evidence, especially when they suggest a side wall or a slight tilt, but a force spike alone does not prove failure. If a connector is captured, preserving that progress matters.</p>
-          <p>An SFP diagnostic drove the same lesson home in another way. One hardware trace recorded hundreds of stall observations while the controller kept retrying an action that was no longer helping. The logs looked busy; the robot looked busy. In reality, it was running in place. More force was not the answer. A better state machine needed to preserve the evidence of failure and move on to a genuinely different recovery before the deadline was almost gone.</p>
-          <p>On real hardware, the contact controller and robot mechanics worked together. My intuition for the Cartesian compliance was a rubber band attached to a target point slightly inside the port: ask the robot to move toward that point, let the controller yield when physical contact resists it, then update the target carefully rather than forcing a rigid geometric line through the hardware.</p>
-
-          <div class="visual-module spring-module" aria-labelledby="spring-visual-title">
-            <div class="visual-head"><div><span class="visual-kicker">CONTROLLER INTUITION / 04</span><h3 id="spring-visual-title">The virtual rubber band</h3></div><span class="tiny-label">IDEALIZED MODEL</span></div>
-            <div class="spring-layout">
-              <div class="spring-viz">
-                <svg id="spring-svg" viewBox="0 0 620 340" role="img" aria-label="A simplified side-view schematic of a connector tip at a port entrance and a virtual target further inside. A spring connects the current tip to the commanded target.">
-                  <defs><pattern id="spring-hatch" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(32)"><path d="M0 0v12" stroke="#2b3b42" stroke-width="4"/></pattern></defs>
-                  <rect x="35" y="50" width="550" height="233" rx="7" fill="#111b1f"/>
-                  <rect x="314" y="81" width="230" height="57" fill="url(#spring-hatch)" stroke="#55707a"/><rect x="314" y="212" width="230" height="57" fill="url(#spring-hatch)" stroke="#55707a"/>
-                  <path d="M314 145v60" stroke="#e6ae6d" stroke-width="2" stroke-dasharray="5 6"/>
-                  <path d="M314 146h230M314 205h230" stroke="#778f95" stroke-width="1.2"/>
-                  <g id="spring-plug"><rect x="148" y="149" width="177" height="53" rx="5" fill="#5e7d83" stroke="#cae3e5" stroke-width="1.6"/><rect x="280" y="155" width="45" height="41" rx="2" fill="#c09a64" stroke="#f4ca8c"/><path d="M166 158h90M166 167h90" stroke="#91aeb2"/></g>
-                  <path id="spring-line" d="M319 175L355 175" stroke="#e6ae6d" stroke-width="2.4" fill="none" stroke-linejoin="round"/>
-                  <g id="spring-target"><circle cx="355" cy="175" r="10" fill="#e8b376" opacity=".2"/><circle cx="355" cy="175" r="4.5" fill="#e8b376"/></g>
-                  <path d="M313 64v15M313 274v13" stroke="#dfa96a" stroke-width="1.3"/>
-                  <g font-family="IBM Plex Mono,monospace" font-size="11" fill="#bacad0">
-                    <text x="149" y="135">CONNECTOR</text><text x="313" y="44" text-anchor="middle">PORT ENTRANCE</text><text x="423" y="133" fill="#e6ae6d">VIRTUAL TARGET</text><text x="386" y="310" fill="#91aaa9">AXIAL ADVANCE →</text>
-                  </g>
-                </svg>
-              </div>
-              <div class="spring-controls">
-                <label for="spring-lead">Virtual target lead <output id="spring-lead-val" for="spring-lead">1.2 mm</output></label>
-                <input type="range" id="spring-lead" min="2" max="30" step="1" value="12" aria-describedby="spring-disclaimer">
-                <label for="spring-k">Idealized stiffness <output id="spring-k-val" for="spring-k">800 N/m</output></label>
-                <input type="range" id="spring-k" min="300" max="1500" step="100" value="800" aria-describedby="spring-disclaimer">
-                <div class="spring-output"><span>SPRING DEMAND, APPROX.</span><strong id="spring-force">0.96 N</strong><small>F ≈ k × displacement</small></div>
-                <p id="spring-disclaimer">Move the target or change stiffness to see how commanded pose error changes idealized spring demand. This is <strong>not</strong> an operational force estimate, safety limit, or physical robot simulation.</p>
-              </div>
-            </div>
-            <div class="visual-foot">An intuition aid for compliant Cartesian pose control. Actual contact forces, damping, geometry and controller behavior are more complex.</div>
-          </div>
-
-          <p>For SC, good visual alignment often meant I could start with a gentle, largely straight descent and let the physical housing guide the last fraction of a millimeter. A small shimmy was reserved for stalls, rather than sweeping broadly across a face that we already knew how to approach. For SFP, the asymmetric entrance made a targeted lateral search more important.</p>
-          <p>This is where the opening scene comes back. The SC connector could produce <strong>two separate clicks</strong>. Earlier hardware runs brought the plug almost all the way home, but the mechanism was not fully seated. Someone familiar with the hardware pointed out the second click. With that detail, I could revisit the terminal travel and force demand and distinguish a connector that looked right from one that was actually latched.</p>
-          <p>It sounds obvious after the fact. At the time, I had never handled either type of connector in person. There are some things no amount of beautiful simulation can teach you as quickly as someone saying, “Push it a little farther. There's another click.”</p>
-        </section>
-
-        <section id="hardware" class="chapter">
-          <div class="chapter-marker">06 / REAL HARDWARE</div>
-          <h2>The real cable was easier. <em>The real stakes were not.</em></h2>
-          <p>Phase 2 moved the work to a physical robot. I had far fewer hardware sessions than I wanted, on the order of seven or eight by my recollection, and every one mattered. My process for making changes stayed familiar: observe a result, form a hypothesis, discuss it with Codex, let the development harness prepare and validate an implementation, then test the next iteration. I was still the person responsible for deciding whether an outcome actually meant what we thought it meant.</p>
-          <p>Some things simplified. In simulation I had built special movement behaviors to get around awkward cable dynamics and motion quirks. With the real cable, bending and settling were often more predictable. I could remove several workarounds and lean more on established robot motion planning. I kept fast motion for safe, open-space viewpoints and slowed the robot substantially around the board, while carrying a connector, and during final approach. Keeping the cable elevated and avoiding abrupt acceleration mattered more than shaving seconds off an individual move.</p>
-          <p>Other things became more demanding. The camera calibration mattered enormously, because my solution depended heavily on high-quality pose estimates. A small shift at the perception layer could change the entire contact behavior downstream. The choice to simplify insertion had moved effort upstream, not eliminated it.</p>
-          <p>I could reuse the same idea behind the scan laboratory: benchmark useful viewpoints on the actual setup, register the board once, keep a consistent model of the rails and ports, and use shorter targeted observations around the currently selected connector. Nothing in the robot's contact policy needed hidden simulator ground truth.</p>
-          <p>There was also a quiet benefit to having developed the whole project through a reproducible engineering workflow. I was not relying on a fragile sequence of manual UI changes that only existed in the browser. I could inspect what had changed, keep known-good versions, and work on logic even when live testing was unavailable. That did not fix the physics, but it made the engineering much less fragile.</p>
-          <p>By the penultimate sessions, the robot was bringing connectors so close to their destinations that the last step was primarily about controlled seating. Then came the lesson about the SC latch, the final tuning, and the ten-for-ten test.</p>
-
-          <div class="result-panel" aria-label="Author reported final hardware test">
-            <div class="result-kicker">MY FINAL HARDWARE SESSION</div>
-            <div class="result-headline"><strong>10<span>/10</span></strong><div><b>Connector ends inserted</b><span>All on the first attempt in that session</span></div></div>
-            <div class="result-bars" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span class="result-near"></span><span class="result-near"></span></div>
-            <div class="result-details"><div><strong>8</strong><span>zero measured gap</span></div><div><strong>0.5 mm</strong><span>remaining gap, one end</span></div><div><strong>1.5 mm</strong><span>remaining gap, one end</span></div></div>
-            <p>This was my last hardware test session, before the separate official final evaluation.</p>
-          </div>
-        </section>
-
-        <section id="ending" class="chapter">
-          <div class="chapter-marker">07 / THE PART THAT MATTERS</div>
-          <h2>I managed the system. <em>The system managed the project.</em></h2>
-          <p>I thought that final test gave me a chance to win. I finished eighth instead. Maybe the scored configuration exposed something I had not tested well enough. Maybe a calibration, configuration, or final-process detail was different. Maybe I made a mistake. Without decisive evidence, choosing the most satisfying explanation would just be fiction.</p>
-          <p>What is not fiction is everything I learned getting there.</p>
-          <p>After the challenge, I discussed the experience in an interview. The interviewer made a comparison I keep coming back to: an artist working in a studio. You can hire an artist to produce one painting. But the studio is what makes repeated work possible. It has the tools, the materials, the accumulated techniques, the ways to test an idea, and the people who know which part of the process comes next.</p>
-          <p>That was the thing I had built. Not just a robot policy, but the studio around it.</p>
-          <p>Codex could write code, investigate failures, assemble experiments, compare logs, and prepare the next iteration. Other agents could work on narrower questions with their own contexts. My role was to organize the studio: decide what mattered, give the agents the right tools, keep evidence straight, and refuse to confuse a successful build with a successful robot. I was limited less by the number of people I could hire than by the experiments I could afford to run and the quality of the system that coordinated them.</p>
-          <p>There is an important boundary to that analogy. Spinning up ten agents does not magically give you ten expert roboticists. Without good context, validation and clear responsibilities, it can give you ten confident ways to be wrong. And physical robots still impose limits: sensor calibration, scarce hardware time, uncertainty at contact, and a world that does not care how convincing your explanation sounds.</p>
-          <p>The robotics lesson was equally useful. Some other teams were working on extraordinarily sophisticated learned policies, and I sometimes felt like an impostor with my relatively small contact controller. But that controller was allowed to be small because I had put so much engineering around it. Better viewpoints, geometric constraints, consistent world state, versioned experiments and careful failure recovery had already removed much of its uncertainty. <strong>Make the environment intelligible, and the last action can become simpler.</strong></p>
-          <p>I came into the challenge wondering whether someone who had been away from robotics for years, with no lab and a slow laptop, could contribute anything meaningful. I left with a top-ten finish, a final hardware session I will remember for a long time, and a reusable way of attacking difficult engineering problems.</p>
-          <p>The story is not that $20 makes someone one of the world's best roboticists. It is that the right AI engineering system changed what I could realistically attempt on my own. The robot still had to feel the edge, find the opening, and earn that second click. I just learned how to build the studio that could keep working on the problem until it did.</p>
-          <p class="closing-statement">I couldn't afford to iterate faster, so I built a system that could iterate without me.<br><em>I managed the system. The system managed the project.</em></p>
-          <div class="closing-byline"><div class="closing-rule"></div><div><strong>Jatin Dheniwal</strong><span>Independent participant · 2026 AI for Industry Challenge</span></div></div>
-        </section>
-
-        <section id="sources" class="sources-section">
-          <div class="chapter-marker">FURTHER READING</div>
-          <h2>References</h2>
-          <p>Official challenge specifications, background reading, and the research that shaped my approach.</p>
-          <ol class="references">
-            <li><a href="https://www.intrinsic.ai/blog/posts/ai-for-industry-challenge" target="_blank" rel="noopener noreferrer">Intrinsic, “Robotics is hard: it's much easier when 5,000 developers get involved”</a><span>Competition retrospective and 115-country participation figure.</span></li>
-            <li><a href="https://github.com/intrinsic-dev/aic/blob/main/docs/overview.md" target="_blank" rel="noopener noreferrer">Official AI for Industry Challenge overview</a><span>Phase dates, challenge structure and scoring overview.</span></li>
-            <li><a href="https://github.com/intrinsic-dev/aic/blob/main/docs/qualification_phase.md" target="_blank" rel="noopener noreferrer">Qualification technical overview</a><span>Starting grasp, randomization, task and simulation requirements.</span></li>
-            <li><a href="https://www.intrinsic.ai/flowstate" target="_blank" rel="noopener noreferrer">Intrinsic Flowstate product overview</a><span>Public descriptions of behavior trees, skills, SDK and simulation-to-hardware workflow.</span></li>
-            <li><a href="https://www.intrinsic.ai/publications/3pt-cvpr2026" target="_blank" rel="noopener noreferrer">3D-Object Perception Transformer (3PT), CVPR 2026</a><span>Public research describing the architecture of the Intrinsic Vision Model.</span></li>
-            <li><a href="https://github.com/intrinsic-ai/sdk" target="_blank" rel="noopener noreferrer">Intrinsic SDK</a><span>Open source development tools for the Intrinsic platform.</span></li>
-          </ol>
-        </section>
+        <section class="chapter" id="challenge"><h2>The challenge, in plain words</h2>
+<figure class="story-photo"><img src="https://cdn.prod.website-files.com/65ef6590d3b13c549fc95d9b/68fc0c3bdb8ae09b09cb2bf4_Screenshot%202025-10-24%20at%201.56.19%E2%80%AFPM-p-800.png" alt="Intrinsic's official published simulation of the robotics challenge workcell." loading="lazy" decoding="async" width="800" height="525"><figcaption>FLOWSTATE SIMULATION / <a href="https://www.intrinsic.ai/events/ai-for-industry-challenge" target="_blank" rel="noopener noreferrer">INTRINSIC</a></figcaption></figure>
+<p>The AI for Industry Challenge was run by Intrinsic and Open Robotics, with Foxconn, Google DeepMind, NVIDIA and Universal Robots as partners. The task sounds almost silly: plug a network cable into a board. One end of the cable has an SFP plug, the other an SC plug. They look nothing alike, and neither do their ports. You write the policy, which is just the logic that decides how the robot behaves, and the robot has to find the right plug, pick it up, and push it home.</p>
+<p>The scale surprised everyone, including the organizers. According to Intrinsic's own recap, about 5,000 developers from 115 countries took part, and The Robot Report counts about 1,600 teams. Only 14% of participants worked in robotics. The prize pool was $180,000, and the field included labs, companies and professors.</p>
+<p>The challenge ran in three phases, each narrowing the field:</p>
+<ol class="story-list">
+<li>Qualification (March 2 to mid-May 2026). Everything in simulation, using Gazebo. The robot starts already holding the plug, the board position is randomized, and you are told which port to use. Around 160 teams made the leaderboard, and the top 30 advanced.</li>
+<li>Phase 1 (mid-May to July). The top 30 teams got Intrinsic Flowstate and the Intrinsic Vision Model. Now the robot has to find the cable, grasp it, pull it out and insert both ends. Still simulated, but roughly five times harder.</li>
+<li>Phase 2 (about a month, ending in September). The top 10 teams deployed remotely onto a real UR5e workcell at Intrinsic HQ in California, with a Robotiq gripper, a force-torque sensor and three wrist cameras. Only two teams reached 100% success in the final stage.</li>
+</ol>
+</section>
+<section class="chapter" id="qualification"><h2>Qualification: build the team, not the policy</h2>
+<p>Let me be honest about where I started. I have no robotics degree, no controls course, nothing formal. I had worked in robotics years earlier, back when ROS 1 Noetic had just come out and ROS 2 was still unstable. Then I left the field. When I read the challenge, I was overwhelmed.</p>
+<p>The other side of the leaderboard looked different. There were teams from Ivy League universities, robotics labs and big corporations, many led by professors and PhDs. I had a personal ChatGPT plan and a 2018 laptop with an Intel i7 and a GTX 1660. In Gazebo, the simulator, I ran at a real-time factor of 0.15 to 0.2, meaning the simulation moved at roughly a fifth of real speed, in the best case. Every experiment was painfully slow.</p>
+<p>So I changed the question. Instead of asking how to solve the challenge, I asked how to build the system that would solve it for me.</p>
+<p>I wiped a partition, installed a fresh Ubuntu, and dedicated it to the challenge. Then I used Codex inside VS Code to install and verify everything itself. When it hit a bug, I didn't fix the bug. I asked a different question: why couldn't Codex figure this out, and what could I give it so that next time it would? That meant memory files, fetched documentation, guides and custom workflows, including one dedicated to testing any policy, using the organizers' sample policies as checks. By the end I hadn't typed a single install command by hand.</p>
+<p>The harness grew from there. Codex could build a policy, package it, test it and hand me the upload. It could run for days while I was away, as long as I had power and internet. In May, long-running tasks were poorly supported, and context compaction caused constant trouble, so a lot of my effort went into helping Codex survive its own long memory. And because a $20 plan has limits, I learned to spend them carefully: a cheaper model to gather context and do research, a stronger model for the hard thinking, and an orchestrator coordinating sub-agents so that cached context got reused instead of rebuilt.</p>
+<p>Once I could describe the challenge to it as a human would, I could ask it open questions: what are my options, and what will go right or wrong with each? Many of its suggestions, like YOLO-based detection, HIL-SERL, HG-DAgger and classical OpenCV features, showed up later in other participants' write-ups. I settled on a very small YOLO model, trained by Codex on data collected from the organizers' reference policy, with me supervising.</p>
+<p>I also played the scoring rules differently. Everyone else, I assume, was chasing the top score. I was trying to stay on the leaderboard: do enough insertions to count, then maximize what I was best at, whether that was trajectory quality, proximity or insertion. My results arrived late, so I made far fewer of my daily submissions than most teams. I finished 19th with a score of about 220, comfortably inside the top 30 and well behind the early leaders, who were near 293.</p>
+</section>
+<section class="chapter" id="phase-one"><h2>Phase 1: a visual tool, a hidden door, and a very good vision model</h2>
+<p>Phase 1 raised the difficulty in every direction. The robot no longer started with the plug in hand. It had to find the cable, grasp it, pull it out, insert one end, then do the other. We had about six weeks instead of three months, and a brand new tool to learn.</p>
+<p>That tool was Intrinsic Flowstate, a web-based environment where you design a workcell and author robot behavior as a flowchart-like behavior tree. It's genuinely intuitive for humans. It was also a problem for me, because my whole advantage was an AI agent that worked in text and code, and Flowstate was visual-first. Flowstate also had its off days: it sometimes failed for me because of capacity problems, which is understandable for a young platform suddenly used by a crowd.</p>
+<h3>The hidden door</h3>
+<p>While clicking around I noticed that any flow you build, which Flowstate calls a process, can be exported. And an exported process can be imported back. I tried it, and it worked.</p>
+<p>If you can teach an agent to read, modify and rebuild those exported files, you have a way to iterate on the robot's behavior without touching the UI. Around then, Intrinsic released its command-line tool, inctl, part of the public SDK, which could list solutions, inspect processes and install them. I built a harness around it. From there my loop was simple: run the process, watch what happened, discuss the results with Codex, let it write the change, install it into Flowstate, and run again. As far as I know, I was the only team working this way.</p>
+<p>This paid off in an unexpected way. Flowstate sometimes wouldn't save my edits, which turned out to be a platform issue. Because I always had a local copy of every process, I could spin up a fresh VM and reinstall, or debug offline. Others reportedly lost work near the deadline.</p>
+<h3>The model that made the policy unnecessary</h3>
+<p>Phase 1 also gave us the Intrinsic Vision Model (IVM). It's based on Intrinsic's 3PT paper, the 3D-Object Perception Transformer, which was a CVPR 2026 highlight (top 3% of submissions). It estimates 6D poses from ordinary RGB cameras, with no depth sensor, by fusing views from multiple angles. Intrinsic's recap says all of the top 10 finalists used it.</p>
+<p>Its raw accuracy beat everything I'd built for qualification, with no extra work. Tested from the robot's home pose it already gave me 3 to 5 millimeters of accuracy and repeatability. My trained YOLO model was suddenly obsolete.</p>
+<h3>The scan lab</h3>
+<p>Three to five millimeters isn't enough to push a connector into a port, so I went after the error systematically. I read the 3PT paper, then told Codex we would imitate their experiments on our own components: find the camera distances, approach angles and combinations of views with the least variance. That became a reusable lab. It tests viewpoints and how many observations are needed, and it tells me how to weight and fuse them.</p>
+<p>Then I added geometry. The taskboard has five NIC cards sitting parallel on rails, with known spacing, and the SC ports sit in two known rows. If you average the orientations of parallel components, the angular error drops. If you know everything sits on the board, the height error drops. The NIC cards are the biggest objects and the most reliably detected, so they can pin down the rest. Each scan updated a belief the robot held about the board, so more observations kept tightening it. Against the simulator's ground truth, the fused estimate was within a millimeter, often by a good margin, and for practical purposes indistinguishable from the real thing.</p>
+<p>One of the nicest things in my notes is how a wrong assumption cost more than a weak model. In Phase 2, I found that my SC ports were off by about 18 mm after fusion, even though the raw detections were accurate. The culprit was a geometric prior from Phase 1 expressed in the wrong coordinate frame. Fixing the frame solved it. More images wouldn't have.</p>
+<p>The cable, meanwhile, was the sporadic part. Flexible cables are hard to simulate, and in Phase 1 a lot of my custom skills existed only to manage how the simulated cable misbehaved. I started the run from a high vantage point: one part of the board was always visible, and from up high even low-confidence IVM detections were enough to locate the board roughly. Then I moved closer and scanned properly.</p>
+</section>
+<section class="chapter" id="phase-two"><h2>Phase 2: real hardware, and a deliberately dumb policy</h2>
+<p>Phase 2 gave each team a limited number of slots on a real robot, about twelve. I only managed to use seven or eight of them, partly through some bad scheduling on my side. Hardware runs didn't count toward the final score. They were for learning.</p>
+<p>The good news was that my whole system carried over. The same scan lab I'd used in simulation found good camera poses on the real arm. The same Codex loop edited and installed processes. Every Wednesday the cameras were recalibrated, and each time IVM's accuracy jumped, which showed how completely my solution depended on good perception.</p>
+<p>The big change was that I could delete things. In Phase 1 I'd written custom motion skills to cope with the simulated robot, and motions that were harmless there could hurt real equipment. For Phase 2 I dropped them and used Flowstate's native motion skills, which gave more predictable, more constrained movement. The cable also behaved more consistently on hardware than in simulation, so I could plan around its expected movement instead of fighting it.</p>
+<h3>Insertion without looking</h3>
+<p>Once the robot had the plug within a few millimeters of the port, I stopped using cameras altogether. The descent, the search and the push were all driven by contact. The paper behind the vision model describes something similar for its own insertion tests, so I was in good company.</p>
+<p>The controller combined Cartesian admittance control, which yields when it feels force, with joint-space impedance control, which keeps the arm stable. For the SFP plug, the robot descended slowly until it touched the port face, then searched with a smooth sweep across the opening. I started with a Lissajous-style path, then moved to spirals and raster-like sweeps that covered the opening better. If it felt force pushing from one side, it twisted or shifted the other way.</p>
+<p>The SC plug mostly didn't need a search, since the vision handoff already landed it very close.</p>
+<p>Then I hit a wall. In two runs the plug went almost all the way in but wouldn't click. The Intrinsic team who ran the cell told me something I would never have guessed, since I've never held an SC plug in real life: the SC connector clicks twice. The first click isn't enough, so you have to push further for the second one. That was my eureka moment. The simulator hadn't captured that click either, which Intrinsic later listed as one of the key sim-to-real gaps. My policy now treated the second click as the goal, pulling the plug toward an imagined point inside the port like a rubber band.</p>
+<p>A surprise from Intrinsic's own recap: about 90% of the top teams also used a rules-based insertion strategy, mostly spiral searches, pattern matching and alignment corrections. A dumb policy on top of an excellent vision model isn't a hack. It turned out to be what most of the winners did too.</p>
+<h3>When doing something isn't progress</h3>
+<p>My notes from the final weeks are full of bugs that only real hardware could show. In one SC failure, the plug was captured and pushed 8 to 9 mm into the port, and then a retreat of a fraction of a millimeter triggered a recovery move that backed it out. Each attempt wasted about 150 of its 180 seconds undoing its own progress. I rebuilt the logic so that once the plug is captured, the controller only ever pushes forward.</p>
+<p>In one SFP attempt, the logs recorded over 300 stalls while the plug sat at the same shallow depth, and the search I'd designed only started about three seconds before the time limit. The robot was constantly busy and getting nowhere. I called it a liveness problem, and fixing it meant looking at progress as measured depth, not just at forces.</p>
+<h3>The last practice run, and the one that counted</h3>
+<p>By my third-to-last hardware run, my plugs were reliably arriving at the port even with different board layouts, and I was getting passive insertions that nearly went in. After the double-click fix and a few more rounds, my final hardware run did all ten insertions on the first try. That was five runs with two connectors each. Eight were perfect, with zero gap. The other two were off by about 0.5 mm and 1.5 mm, well inside the three-millimeter margin.</p>
+<p>I honestly thought I was going to win.</p>
+<p>Then came the scored submission. Intrinsic ran each team's final solution three times on the same configuration, and practice runs didn't count. My result didn't match what I'd seen. I finished 8th. I don't know why. My best guess is something about the camera setup, perhaps an intrinsics value I got wrong or a calibration that had drifted, or maybe I made a mistake in the final process. I never found out, and I'd rather say that than invent a tidy explanation.</p>
+<p>Two teams reached 100% success in the final stage. Team Flex from the USA won, and TCS-PLGRM from India took second place. Flex used a lateral swinging motion for SC insertion that lets the connector self-align with the port. In hardware, that kind of detail decides things.</p>
+<p>I'll remember this experience for life. After years away from robotics, I came back not just to take part but to finish in the top ten in the world, with a shot at the top.</p>
+</section>
+<section class="chapter" id="takeaways"><h2>What I took away</h2>
+<ol class="story-list">
+<li>When you can't iterate fast, build something that can. I couldn't afford many experiments, so I built a harness of skills, memory files, test workflows, specialized sub-agents and deterministic checks, and let it run for days. I managed the system, and the system managed the project.</li>
+<li>Simple can beat clever. When the perception is excellent and you know your environment's randomization, a dumb contact-driven policy can reach 10 out of 10. I felt like an impostor next to teams with elaborate learned systems, but Intrinsic's own recap says most winners did the same.</li>
+<li>Know what your evidence proves. My notes separate built, installed, loaded, run and observed on hardware, because each is a different claim. A fix that passes tests isn't a fix until the robot agrees.</li>
+<li>Sim is a rehearsal, not the show. The click, the cable and the contact physics all changed on hardware. Removing simulator workarounds made my system better.</li>
+<li>Domain expertise matters less than it used to, but management matters more. I did all of this on a personal plan. Imagine what a team with real resources could do. You no longer have to be an expert in a field to get close to the top of it, if you're good at directing AI.</li>
+</ol>
+<p>A big thank you to Intrinsic and Open Robotics for running a challenge this ambitious, and for letting a laptop from 2018 show up to it.</p>
+</section>
+<section class="chapter" id="appendix"><h2>Appendix: how the Phase 2 system worked</h2>
+<p>The design rule was to reduce uncertainty step by step and use the sensor that suits each stage: cameras for where things are, force sensing for the last few millimeters.</p>
+<ol class="story-list">
+<li>Scan. The robot goes to a high vantage point, finds the board roughly, then runs a scan sequence designed in the scan lab. Each IVM detection is one noisy observation, not the truth.</li>
+<li>Fuse. A constraint solver reconciles the detections using the declared board geometry: parallel NIC cards, rail positions, the SC port rows, and the fact that everything sits on the board. The result is one coherent world model.</li>
+<li>Cache and refresh. Board geometry is stored and reused across all five runs. Cable and connector state can change, so just before each pick the robot takes a single IVM look directly above the connector, to check that it hasn't moved or been blocked.</li>
+<li>Move with context. Fast through free space. Slow, with fixed validated velocity and acceleration limits, near the board. While carrying a connector, a smooth raised path keeps clearance and avoids swinging the cable.</li>
+<li>Hand off to force. Vision brings the plug to within a few millimeters of the port. From there the controller is compliant and force-guided, with no camera feedback: slow descent, contact, a small search for the SFP, and a one-way push for SC, past the second click.</li>
+<li>Reset. After each run the robot returns to a standard home pose. Runs two to five repeat only the observations needed to confirm the connector and cable state.</li>
+</ol>
+<p>The pieces are configuration, not code tied to one board. A different board layout would need new component models, geometry, scan parameters, grasp frames and insertion parameters, plus validation, but not a new architecture.</p>
+</section>
+<section class="chapter" id="workflow"><h2>The workflow around it</h2>
+<p>My robot code lived in Flowstate processes, and I treated them as software. A runbook in my repository describes the loop: export the exact saved process, edit it in a controlled way, validate it locally, install it, then fetch it back from the server and compare it with what I sent. The final submitted process had about 500 nodes. The same notes insist on separating seven states, from a local file to a hardware result, because installing a process doesn't run it and loading it doesn't save it.</p>
+</section>
+<section class="chapter" id="caveats"><h2>Caveats</h2>
+<p>Numbers like sub-millimeter fusion accuracy are measured against simulator ground truth, which doesn't exist on the real robot. The SC stage pushed harder than the SFP stage near its end, so &quot;low force&quot; describes the first contact, not every moment. And everything here describes my own system, not a general recipe for safe robot insertion.</p>
+</section>
       </article>
     </div>
   </main>
