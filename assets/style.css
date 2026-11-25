@@ -281,3 +281,6 @@ body{background:white;color:#152128}a{color:#1a5d53}
 .verbatim-article .story-list li{font-size:15px;line-height:1.78}
 .verbatim-article .chapter{margin-bottom:80px}
 }
+
+/* Quiet author links without added branding. */
+.hero-byline a{color:inherit;text-decoration:none;border-bottom:1px solid #53646b}.hero-byline a:hover{color:#e8b679;border-color:#e8b679}.site-footer nav{display:flex;gap:18px;flex-wrap:wrap}.site-footer nav a{color:#b3c5c1;text-decoration:none}.site-footer nav a:hover{color:#e8b679}
