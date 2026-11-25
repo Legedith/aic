@@ -15,7 +15,7 @@
   <meta property="og:image:alt" content="Official Intrinsic AI for Industry Challenge robot workcell photograph">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="I Took a $20 ChatGPT Plan Into a $180,000 Robotics Competition. I Finished 8th.">
-  <meta name="twitter:description" content="The story of my robotics challenge, the AI harness I built, and the final that I still cannot explain.">
+  <meta name="twitter:description" content="The engineering system behind my top-ten robotics finish, from AI agents and vision to real robot hardware.">
   <link rel="canonical" href="https://legedith.github.io/aic/">
   <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -59,7 +59,7 @@
       <article class="article-body">
         <section class="chapter intro" id="opening">
           <p class="story-lead">In 2026 I finished 8th in the world at a robotics challenge run by Intrinsic, an Alphabet company. I did it with no robotics degree, a four-year gap since I last touched ROS, a 2018 laptop with a GTX 1660, and a $20 ChatGPT plan.</p>
-<p>I couldn't iterate fast, so I stopped trying to solve the problem myself. I built a system that could iterate without me, and then I managed the system. This is the story of that, including the part where my final scored run didn't match my last practice run on the real robot, and I still don't know why.</p>
+<p>I couldn't iterate fast, so I stopped trying to solve the problem myself. I built a system that could iterate without me, and then I managed the system. This is the story of how I built that system and used it to return to robotics.</p>
 <p>A quick map for the road ahead: a three-month simulation qualifier, a six-week phase in Intrinsic's Flowstate where I got a vision model and a trick with exported processes, and a one-month finale on a real UR5e robot at Intrinsic's headquarters, controlled remotely from my desk.</p>
 
         </section>
@@ -112,10 +112,9 @@
 <h3>When doing something isn't progress</h3>
 <p>My notes from the final weeks are full of bugs that only real hardware could show. In one SC failure, the plug was captured and pushed 8 to 9 mm into the port, and then a retreat of a fraction of a millimeter triggered a recovery move that backed it out. Each attempt wasted about 150 of its 180 seconds undoing its own progress. I rebuilt the logic so that once the plug is captured, the controller only ever pushes forward.</p>
 <p>In one SFP attempt, the logs recorded over 300 stalls while the plug sat at the same shallow depth, and the search I'd designed only started about three seconds before the time limit. The robot was constantly busy and getting nowhere. I called it a liveness problem, and fixing it meant looking at progress as measured depth, not just at forces.</p>
-<h3>The last practice run, and the one that counted</h3>
+<h3>Ten insertions, and the limits of certainty</h3>
 <p>By my third-to-last hardware run, my plugs were reliably arriving at the port even with different board layouts, and I was getting passive insertions that nearly went in. After the double-click fix and a few more rounds, my final hardware run did all ten insertions on the first try. That was five runs with two connectors each. Eight were perfect, with zero gap. The other two were off by about 0.5 mm and 1.5 mm, well inside the three-millimeter margin.</p>
-<p>I honestly thought I was going to win.</p>
-<p>Then came the scored submission. Intrinsic ran each team's final solution three times on the same configuration, and practice runs didn't count. My result didn't match what I'd seen. I finished 8th. I don't know why. My best guess is something about the camera setup, perhaps an intrinsics value I got wrong or a calibration that had drifted, or maybe I made a mistake in the final process. I never found out, and I'd rather say that than invent a tidy explanation.</p>
+<p>That last hardware session gave me ten successful insertions out of ten, so I entered the final evaluation with high expectations. I didn't get the same 10 out of 10 during official scoring, and finished 8th. That's a reality of robotics: a system can work exceptionally well in testing and still behave differently when evaluated. Calibration, perception and contact dynamics all introduce uncertainty. My leading hypothesis is camera calibration drift. My solution relied heavily on accurate poses from the Intrinsic Vision Model, so a small shift in calibration could affect everything downstream. But that's a hypothesis, not a confirmed explanation.</p>
 <p>Two teams reached 100% success in the final stage. Team Flex from the USA won, and TCS-PLGRM from India took second place. Flex used a lateral swinging motion for SC insertion that lets the connector self-align with the port. In hardware, that kind of detail decides things.</p>
 <p>I'll remember this experience for life. After years away from robotics, I came back not just to take part but to finish in the top ten in the world, with a shot at the top.</p>
 </section>
