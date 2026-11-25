@@ -1,7 +1,7 @@
 I Couldn't Iterate Fast, So I Built a System That Could
-27 Oct 2026 · @JS
+27 Oct 2026 · @legedith
 In 2026 I finished 8th in the world at a robotics challenge run by Intrinsic, an Alphabet company. I did it with no robotics degree, a four-year gap since I last touched ROS, a 2018 laptop with a GTX 1660, and a $20 ChatGPT plan.
-The short version of how: I couldn't iterate fast, so I stopped trying to solve the problem myself. I built a system that could iterate without me, and then I managed the system. This is the story of that, including the part where my final scored run didn't match my last practice run on the real robot, and I still don't know why.
+I couldn't iterate fast, so I stopped trying to solve the problem myself. I built a system that could iterate without me, and then I managed the system. This is the story of that, including the part where my final scored run didn't match my last practice run on the real robot, and I still don't know why.
 A quick map for the road ahead: a three-month simulation qualifier, a six-week phase in Intrinsic's Flowstate where I got a vision model and a trick with exported processes, and a one-month finale on a real UR5e robot at Intrinsic's headquarters, controlled remotely from my desk.
 The challenge, in plain words
 The AI for Industry Challenge was run by Intrinsic and Open Robotics, with Foxconn, Google DeepMind, NVIDIA and Universal Robots as partners. The task sounds almost silly: plug a network cable into a board. One end of the cable has an SFP plug, the other an SC plug. They look nothing alike, and neither do their ports. You write the policy, which is just the logic that decides how the robot behaves, and the robot has to find the right plug, pick it up, and push it home.
