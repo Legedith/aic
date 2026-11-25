@@ -252,3 +252,32 @@ body{background:white;color:#152128}a{color:#1a5d53}
 .story-photo{margin:28px 0 30px}
 .story-photo figcaption{font-size:9px}
 }
+
+
+/* Long-form article with the author's original headings and text. */
+.verbatim-article .intro{margin-bottom:85px;border-bottom:1px solid #354950;padding-bottom:48px}
+.verbatim-article .story-lead{font:400 clamp(24px,3vw,36px)/1.45 "Newsreader",Georgia,serif!important;color:#eaf0e9!important;letter-spacing:-.02em}
+.verbatim-article .chapter>h2{font:400 clamp(37px,4.5vw,65px)/1.13 "Newsreader",Georgia,serif;letter-spacing:-.043em;margin:0 0 33px;color:#f0f2e9}
+.verbatim-article .chapter>h3{font:400 clamp(25px,3vw,39px)/1.25 "Newsreader",Georgia,serif;letter-spacing:-.02em;color:#e8b679;margin:56px 0 23px}
+.verbatim-article .story-list{counter-reset:none;padding-left:32px;margin:18px 0 36px;list-style:decimal}
+.verbatim-article .story-list li{color:#b7c6c8;font:400 16px/1.88 "DM Sans",Arial,sans-serif;padding-left:7px;margin-bottom:18px}
+.verbatim-article .story-list li::marker{font:600 13px "IBM Plex Mono",monospace;color:#e8b679}
+.verbatim-article .story-photo{margin:0 0 38px}
+.verbatim-article .chapter{margin-bottom:105px;scroll-margin-top:105px}
+.hero-byline{font:11px "IBM Plex Mono",monospace!important;color:#a1bab8!important;letter-spacing:.06em;margin:26px 0 30px}
+.hero-content h1{font:400 clamp(3.5rem,5.55vw,6rem)/1.035 "Newsreader",Georgia,serif;letter-spacing:-.048em}
+.hero-photograph{margin:0}
+.hero-photograph img{display:block;width:100%;height:auto;max-height:560px;object-fit:cover}
+.hero-photograph .figure-bottom{margin:0}
+.article-rail a span{overflow-wrap:anywhere}
+@media(max-width:900px){.verbatim-article .intro{margin-bottom:66px}.verbatim-article .chapter{margin-bottom:87px}.hero-content h1{font-size:clamp(3.5rem,7vw,5.8rem)}}
+@media(max-width:650px){
+.hero-content h1{font-size:clamp(2.8rem,10.4vw,4.6rem)}
+.hero-byline{font-size:10px!important}
+.verbatim-article .chapter>h2{font-size:clamp(32px,9vw,48px);line-height:1.16}
+.verbatim-article .chapter>h3{font-size:clamp(25px,7vw,34px);margin-top:41px}
+.verbatim-article .story-lead{font-size:24px!important}
+.verbatim-article .story-list{padding-left:25px}
+.verbatim-article .story-list li{font-size:15px;line-height:1.78}
+.verbatim-article .chapter{margin-bottom:80px}
+}
