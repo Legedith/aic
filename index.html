@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#0c1115">
-  <meta name="color-scheme" content="dark">
+  <meta name="color-scheme" content="dark light">
   <meta name="author" content="Jatin Dehmiwal">
   <meta name="description" content="Jatin Dehmiwal on finishing eighth in the 2026 Intrinsic AI for Industry Challenge with an aging laptop, a $20 ChatGPT plan, and an autonomous engineering system.">
   <meta property="og:type" content="article">
@@ -21,7 +21,17 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
-  <style>body{margin:0;background:#0c1115;color:#e7eeeb;font-family:Georgia,serif}</style>
+  <script>
+    (function () {
+      var theme = "dark";
+      try {
+        var saved = localStorage.getItem("aic-color-theme");
+        if (saved === "light" || saved === "dark") theme = saved;
+        else if (window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches) theme = "light";
+      } catch (_) { /* Use the default theme when storage is unavailable. */ }
+      document.documentElement.setAttribute("data-theme", theme);
+    })();
+  </script>
   <link rel="stylesheet" href="./assets/style.css">
   <script defer src="./assets/main.js"></script>
   <title>I Took a $20 ChatGPT Plan Into a $180,000 Robotics Competition. I Finished 8th. · Jatin Dehmiwal</title>
@@ -29,6 +39,13 @@
 <body>
   <a class="skip" href="#story">Skip to story</a>
   <div class="read-progress" id="read-progress" aria-hidden="true"></div>
+  <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to light mode">
+    <svg class="theme-toggle-icon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="4"></circle>
+      <path d="M12 2v2m0 16v2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4M2 12h2m16 0h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>
+    </svg>
+    <span id="theme-toggle-label">Light mode</span>
+  </button>
 
 
 
