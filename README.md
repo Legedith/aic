@@ -1,4 +1,4 @@
-# I Couldn't Iterate Fast, So I Built a System That Could
+# I Took a $20 ChatGPT Plan Into a $180,000 Robotics Competition. I Finished 8th.
 
 27 Oct 2026 · [Jatin Dehmiwal](https://www.linkedin.com/in/legedith/) · [@legedith](https://github.com/legedith)
 
