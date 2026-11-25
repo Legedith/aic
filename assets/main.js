@@ -1,6 +1,31 @@
 (() => {
   "use strict";
   const start = () => {
+    const toggle = document.getElementById("theme-toggle");
+    const label = document.getElementById("theme-toggle-label");
+    const root = document.documentElement;
+    const themeColor = document.querySelector('meta[name="theme-color"]');
+
+    const updateThemeControl = () => {
+      const light = root.getAttribute("data-theme") === "light";
+      if (label) label.textContent = light ? "Dark mode" : "Light mode";
+      if (toggle) {
+        toggle.setAttribute("aria-label", light ? "Switch to dark mode" : "Switch to light mode");
+        toggle.setAttribute("title", light ? "Switch to dark mode" : "Switch to light mode");
+      }
+      if (themeColor) themeColor.setAttribute("content", light ? "#faf9f5" : "#0c1115");
+    };
+    if (toggle) {
+      toggle.addEventListener("click", () => {
+        const light = root.getAttribute("data-theme") === "light";
+        const next = light ? "dark" : "light";
+        root.setAttribute("data-theme", next);
+        try { window.localStorage.setItem("aic-color-theme", next); }
+        catch (_) { /* Theme still works when storage is blocked. */ }
+        updateThemeControl();
+      });
+    }
+    updateThemeControl();
     const progress = document.getElementById("read-progress");
     const updateProgress = () => {
       if (!progress) return;
